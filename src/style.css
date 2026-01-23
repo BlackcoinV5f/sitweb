@@ -1,0 +1,30 @@
+/* =========================
+   VARIABLES GLOBALES
+   ========================= */
+:root {
+  --primary-purple: #5b2d8b;
+  --dark-bg: #1f0f33;
+  --gradient-end: #3a1c5a;
+  --accent-yellow: #f5b301;
+  --text-light: #ffffff;
+  --spacing-unit: 8px;
+}
+
+/* =========================
+   RESET
+   ========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* =========================
+   BODY
+   ========================= */
+body {
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  background-color: var(--dark-bg);
+  color: var(--text-light);
+  overflow-x: hidden;
+}
