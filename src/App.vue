@@ -12,10 +12,23 @@
       </div>
 
       <nav class="nav-links">
-        <a href="#">Blockchain</a>
-        <a href="#">Écosystème</a>
-        <a href="#">À propos</a>
-        <a href="#">Communauté</a>
+        <!-- DROPDOWN BLOCKCHAIN -->
+        <div class="nav-item dropdown">
+          <span class="nav-link">Blockchain</span>
+
+          <div class="dropdown-menu">
+            <a href="#" class="dropdown-item">
+              Livre blanc
+            </a>
+            <a href="#" class="dropdown-item">
+              Feuille de route
+            </a>
+          </div>
+        </div>
+
+        <a href="#" class="nav-link">Écosystème</a>
+        <a href="#" class="nav-link">À propos</a>
+        <a href="#" class="nav-link">Communauté</a>
       </nav>
     </header>
 
@@ -34,10 +47,13 @@
         </p>
 
         <a
-          href="https://github.com/BlackcoinV5f/blackcoin-versing-apk/releases/download/v6.0/blackcoin.apk"
+          :href="apkUrl"
           class="hero-btn"
+          :class="{ disabled: loading || error }"
         >
-          Télécharger l’application Blackcoin
+          <span v-if="loading">Chargement…</span>
+          <span v-else-if="error">Téléchargement indisponible</span>
+          <span v-else>Télécharger l’application Blackcoin</span>
         </a>
       </div>
 
@@ -48,6 +64,37 @@
         />
       </div>
     </section>
+
+<!-- PROBLEM STATEMENT -->
+<section class="problem-wave">
+  <div class="problem-content">
+    <p>
+      Aujourd’hui, miner des cryptomonnaies exige des ressources que peu possèdent.
+    </p>
+    <p>
+      Investir reste risqué et réservé aux plus avertis.
+    </p>
+    <p>
+      Blackcoin est né pour rendre la crypto accessible à tous.
+    </p>
+  </div>
+
+  <!-- WAVE -->
+  <svg
+    class="wave"
+    viewBox="0 0 1440 90"
+    preserveAspectRatio="none"
+  >
+    <path
+      d="M0,40 C120,60 240,20 360,30
+         C480,40 600,70 720,60
+         C840,50 960,20 1080,30
+         C1200,40 1320,60 1440,50
+         L1440,90 L0,90 Z"
+      fill="#1f0f33"
+    />
+  </svg>
+</section>
 
     <!-- INFO -->
     <section class="info-alert">
@@ -63,6 +110,40 @@
     </section>
   </div>
 </template>
+
+<script setup>
+import { ref, onMounted } from "vue";
+
+const apkUrl = ref("#");
+const loading = ref(true);
+const error = ref(false);
+
+onMounted(async () => {
+  try {
+    const response = await fetch(
+      "https://raw.githubusercontent.com/BlackcoinV5f/blackcoin-versing-apk/main/version.json",
+      { cache: "no-store" }
+    );
+
+    if (!response.ok) {
+      throw new Error("HTTP " + response.status);
+    }
+
+    const data = await response.json();
+
+    if (!data.apk_url) {
+      throw new Error("apk_url manquant dans version.json");
+    }
+
+    apkUrl.value = data.apk_url;
+  } catch (e) {
+    console.error("Erreur chargement APK :", e);
+    error.value = true;
+  } finally {
+    loading.value = false;
+  }
+});
+</script>
 
 <style scoped>
 /* =========================
@@ -164,9 +245,14 @@
   transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 
-.hero-btn:hover {
+.hero-btn:hover:not(.disabled) {
   transform: translateY(-2px);
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+}
+
+.hero-btn.disabled {
+  pointer-events: none;
+  opacity: 0.6;
 }
 
 /* IMAGE */
@@ -200,6 +286,37 @@
   color: #333;
   font-weight: 500;
 }
+
+/* =========================
+   PROBLEM WAVE SECTION
+   ========================= */
+.problem-wave {
+  background-color: #7a3d8f;
+  color: #ffffff;
+  padding: 100px 24px 0;
+  text-align: center;
+  position: relative;
+}
+
+.problem-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.problem-content p {
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.5;
+  margin-bottom: 18px;
+}
+
+/* vague */
+.wave {
+  display: block;
+  width: 100%;
+  height: 90px;
+}
+
 
 /* =========================
    RESPONSIVE
