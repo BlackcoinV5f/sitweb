@@ -581,20 +581,47 @@ body {
   align-items: center;
   justify-content: center;
   gap: 12px;
-  background: var(--accent);
-  color: #000;
-  padding: 1.25rem 2.5rem;
+
+  background: linear-gradient(135deg, #6a11cb, #f5b301);
+  color: #fff;
+
+  padding: 1.3rem 2.8rem;
   font-weight: 700;
-  border-radius: 12px;
+  border-radius: 14px;
   text-decoration: none;
-  transition: var(--transition);
   font-size: 1.1rem;
-  border: none;
+
+  border: 1px solid rgba(255, 255, 255, 0.2);
   cursor: pointer;
   min-width: 280px;
+
   position: relative;
   overflow: hidden;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  transition: all 0.35s ease;
 }
+
+.hero-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255, 255, 255, 0.4),
+    transparent
+  );
+  transition: all 0.6s ease;
+}
+
+.hero-btn:hover::before {
+  left: 100%;
+}
+
 
 .hero-btn:hover:not(.disabled) {
   transform: translateY(-3px);
