@@ -280,20 +280,71 @@ onUnmounted(() => {
 @media (max-width: 768px) {
   .menu-toggle {
     display: block;
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    color: white;
+    font-size: 1.8rem;
+    width: 48px;
+    height: 48px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 1100;
+    position: relative;
+  }
+
+  .menu-toggle:hover {
+    background: rgba(255, 255, 255, 0.3);
   }
 
   .nav-links {
     position: fixed;
-    top: 70px;
+    top: 80px;
     left: 0;
     right: 0;
+    bottom: 0;
+    background: rgba(91, 45, 139, 0.98);
+    backdrop-filter: blur(20px);
     flex-direction: column;
+    padding: 2rem;
+    gap: 1rem;
     transform: translateX(100%);
-    transition: 0.3s;
+    transition: transform 0.3s ease-in-out;
+    z-index: 1000;
   }
 
   .nav-links.open {
     transform: translateX(0);
+  }
+  
+  /* Ajustement du dropdown en mobile */
+  .dropdown {
+    width: 100%;
+  }
+  
+  .dropdown-menu {
+    position: static;
+    background: rgba(255, 255, 255, 0.1);
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+    opacity: 0;
+    visibility: hidden;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: all 0.2s ease;
+  }
+  
+  .dropdown-menu.active {
+    opacity: 1;
+    visibility: visible;
+    transform: scaleY(1);
+  }
+  
+  .nav-link, .dropdown-trigger {
+    width: 100%;
+    text-align: left;
+    padding: 1rem;
+    font-size: 1.1rem;
   }
 }
 </style>
