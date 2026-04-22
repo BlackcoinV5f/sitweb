@@ -19,12 +19,35 @@
         <h3 class="footer-title">Suivez-nous</h3>
         <div class="social-links">
 
-          <a href="https://www.facebook.com/share/1CjsWSj1P3/" target="_blank" class="social-link facebook">F</a>
-          <a href="https://www.youtube.com/@Blackcoinchaine" target="_blank" class="social-link youtube">Y</a>
-          <a href="https://t.me/+2VYCu2Ygs0Q1YTk0" target="_blank" class="social-link telegram">T</a>
-          <a href="https://x.com/BlackcoinON" target="_blank" class="social-link twitter">X</a>
-          <a href="https://www.instagram.com/blackcoin_bkc" target="_blank" class="social-link instagram">I</a>
-          <a href="https://www.tiktok.com/@blackcoin_official" target="_blank" class="social-link tiktok">TT</a>
+          <!-- BOT TELEGRAM -->
+          <a href="https://t.me/Bkc_blackcoinbot" target="_blank" rel="noopener noreferrer" class="social-link">
+            <i class="fa-brands fa-telegram"></i>
+          </a>
+
+          <!-- COMMUNAUTÉ TELEGRAM -->
+          <a href="https://t.me/+2VYCu2Ygs0Q1YTk0" target="_blank" rel="noopener noreferrer" class="social-link">
+            <i class="fa-brands fa-telegram"></i>
+          </a>
+
+          <a href="https://www.facebook.com/share/1CjsWSj1P3/" target="_blank" rel="noopener noreferrer" class="social-link">
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+
+          <a href="https://www.youtube.com/@Blackcoinchaine" target="_blank" rel="noopener noreferrer" class="social-link">
+            <i class="fa-brands fa-youtube"></i>
+          </a>
+
+          <a href="https://x.com/BlackcoinON" target="_blank" rel="noopener noreferrer" class="social-link">
+            <i class="fa-brands fa-x-twitter"></i>
+          </a>
+
+          <a href="https://www.instagram.com/blackcoin_bkc" target="_blank" rel="noopener noreferrer" class="social-link">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+
+          <a href="https://www.tiktok.com/@blackcoin_official" target="_blank" rel="noopener noreferrer" class="social-link">
+            <i class="fa-brands fa-tiktok"></i>
+          </a>
 
         </div>
       </div>
@@ -129,27 +152,30 @@ const currentYear = computed(() => new Date().getFullYear());
   color: var(--accent);
 }
 
-/* SOCIAL */
+/* 🔥 SOCIAL */
 .social-links {
   display: flex;
-  gap: 10px;
+  gap: 12px;
   flex-wrap: wrap;
 }
 
 .social-link {
-  width: 40px;
-  height: 40px;
-  background: rgba(255,255,255,0.1);
+  width: 42px;
+  height: 42px;
+  background: rgba(255,255,255,0.08);
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 8px;
-  font-size: 14px;
+  border-radius: 10px;
+  font-size: 18px;
+  color: #facc15;
   transition: 0.3s;
 }
 
 .social-link:hover {
-  transform: translateY(-3px);
+  transform: translateY(-4px) scale(1.1);
+  background: #facc15;
+  color: #000;
 }
 
 /* BOTTOM */

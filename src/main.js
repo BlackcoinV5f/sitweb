@@ -1,8 +1,11 @@
 import { createApp } from 'vue'
 import App from './App.vue'
-import router from './router'   // 👈 on importe le router
+import router from './router'
 import './style.css'
 
+// 🔥 IMPORT FONT AWESOME (pour afficher les icônes)
+import '@fortawesome/fontawesome-free/css/all.min.css'
+
 createApp(App)
-  .use(router)                 // 👈 on branche le router
+  .use(router)
   .mount('#app')

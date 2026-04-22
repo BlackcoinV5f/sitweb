@@ -47,7 +47,7 @@
 
           <!-- TELEGRAM -->
           <a
-            href="https://t.me/BlackcoinBot"
+            href="https://t.me/Bkc_blackcoinbot"
             target="_blank"
             rel="noopener noreferrer"
             class="hero-btn telegram-btn"

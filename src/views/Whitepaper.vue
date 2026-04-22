@@ -8,7 +8,9 @@
     <article class="whitepaper-container">
       <header class="document-header">
         <h1>LIVRE BLANC BLACKCOIN (BKC)</h1>
-        <p class="document-subtitle">Plateforme d'éducation et d'accès aux services financiers numériques</p>
+        <p class="document-subtitle">
+          Plateforme d'éducation et d'accès aux services financiers numériques
+        </p>
         <div class="warning-banner">
           ⚠️ <strong>Document informatif</strong> — Le token BKC est un outil utilitaire, 
           ne constitue pas un produit d'investissement et ne garantit aucun rendement.
@@ -27,6 +29,7 @@
       <Risks />
       <Conclusion />
 
+      <!-- FOOTER -->
       <footer class="document-footer">
         <div class="footer-content">
           <p class="disclaimer">
@@ -34,11 +37,48 @@
             Ce document ne constitue pas une offre financière, un conseil en investissement 
             ou une sollicitation d'achat. Consultez nos CGU pour plus d'informations.
           </p>
+
           <div class="footer-links">
             <a href="#">Conditions Générales</a>
             <a href="#">Politique de confidentialité</a>
             <a href="#">Contact</a>
           </div>
+
+          <!-- 🔥 RÉSEAUX SOCIAUX AVEC ICÔNES -->
+          <div class="social-icons">
+            
+            <!-- BOT TELEGRAM -->
+            <a href="https://t.me/Bkc_blackcoinbot" target="_blank" rel="noopener noreferrer" title="Bot Telegram">
+              <i class="fab fa-telegram"></i>
+            </a>
+
+            <!-- COMMUNAUTÉ TELEGRAM -->
+            <a href="https://t.me/+2VYCu2Ygs0Q1YTk0" target="_blank" rel="noopener noreferrer" title="Communauté Telegram">
+              <i class="fab fa-telegram-plane"></i>
+            </a>
+
+            <a href="https://www.facebook.com/share/1CjsWSj1P3/" target="_blank" rel="noopener noreferrer" title="Facebook">
+              <i class="fab fa-facebook"></i>
+            </a>
+
+            <a href="https://x.com/BlackcoinON" target="_blank" rel="noopener noreferrer" title="X">
+              <i class="fab fa-x-twitter"></i>
+            </a>
+
+            <a href="https://www.instagram.com/blackcoin_bkc" target="_blank" rel="noopener noreferrer" title="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+
+            <a href="https://www.youtube.com/@Blackcoinchaine" target="_blank" rel="noopener noreferrer" title="YouTube">
+              <i class="fab fa-youtube"></i>
+            </a>
+
+            <a href="https://www.tiktok.com/@blackcoin_official" target="_blank" rel="noopener noreferrer" title="TikTok">
+              <i class="fab fa-tiktok"></i>
+            </a>
+
+          </div>
+
         </div>
       </footer>
     </article>
@@ -102,4 +142,24 @@ export default {
 
 <style scoped>
 @import './styles/whitepaper.css';
+
+/* 🔥 SOCIAL ICONS PRO STYLE */
+.social-icons {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+
+.social-icons a {
+  font-size: 22px;
+  color: #facc15;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color: #ffffff;
+  transform: translateY(-4px) scale(1.15);
+}
 </style>
