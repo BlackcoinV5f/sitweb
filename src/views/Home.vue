@@ -26,9 +26,9 @@ import InfoAlert from '../components/InfoAlert.vue'
 
 <style>
 :root {
-  --primary: #1f0f33;
-  --secondary: #5b2d8b;
-  --accent: #f5b301;
+  --primary: #071120;
+  --secondary: #0d1b2a;
+  --accent: #00c2ff;
   --text: #ffffff;
   --text-secondary: rgba(255, 255, 255, 0.85);
 }
