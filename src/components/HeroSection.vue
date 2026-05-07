@@ -139,127 +139,341 @@ onMounted(async () => {
 </script>
 
 <style scoped>
+
+/* =========================
+   HERO SECTION
+========================= */
+
 .hero {
   min-height: calc(100vh - 80px);
+
   display: flex;
   align-items: center;
+
   padding: 4rem 2rem;
-  background: radial-gradient(ellipse at 80% 50%, rgba(91, 45, 139, 0.3), transparent 50%);
+
+  overflow: hidden;
+
+  background:
+    radial-gradient(
+      ellipse at 80% 50%,
+      rgba(91, 45, 139, 0.25),
+      transparent 50%
+    );
 }
 
+/* =========================
+   CONTAINER
+========================= */
+
 .hero-content {
+  width: 100%;
   max-width: 1200px;
+
   margin: 0 auto;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
+
   gap: 4rem;
-  width: 100%;
 }
+
+/* =========================
+   TEXT
+========================= */
 
 .hero-text {
   flex: 1;
+
   max-width: 600px;
+
+  z-index: 2;
 }
 
 .hero-text h1 {
   font-size: clamp(2.5rem, 5vw, 4rem);
+
   line-height: 1.1;
+
   margin-bottom: 1.5rem;
+
   font-weight: 800;
 }
 
 .highlight {
-  color: var(--accent);
-  background: linear-gradient(45deg, var(--accent), #ffd700);
+  background:
+    linear-gradient(
+      45deg,
+      var(--accent),
+      #ffd700
+    );
+
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .hero-subtitle {
-  font-size: 1.25rem;
+  font-size: 1.2rem;
+
+  line-height: 1.7;
+
   color: var(--text-secondary);
+
   margin-bottom: 2rem;
 }
 
+/* =========================
+   ACTIONS
+========================= */
+
 .hero-actions {
   display: flex;
+
   flex-wrap: wrap;
+
   gap: 1rem;
 }
 
 .hero-btn {
   display: inline-flex;
+
   align-items: center;
+  justify-content: center;
+
   gap: 10px;
-  padding: 1rem 1.6rem;
+
+  padding: 1rem 1.5rem;
+
   border-radius: 14px;
+
   font-weight: 700;
+
   border: none;
+
   cursor: pointer;
-  transition: 0.3s;
+
+  transition: all 0.3s ease;
+
+  text-decoration: none;
+}
+
+.hero-btn:hover {
+  transform: translateY(-2px);
 }
 
 .hero-btn.disabled {
   opacity: 0.6;
+
   pointer-events: none;
 }
 
+/* BUTTONS */
+
 .android-btn {
-  background: linear-gradient(135deg, #3ddc84, #00a86b);
-  color: #fff;
+  background:
+    linear-gradient(
+      135deg,
+      #3ddc84,
+      #00a86b
+    );
+
+  color: white;
 }
 
 .telegram-btn {
-  background: linear-gradient(135deg, #0088cc, #006699);
-  color: #fff;
+  background:
+    linear-gradient(
+      135deg,
+      #0088cc,
+      #006699
+    );
+
+  color: white;
 }
 
 .ios-btn {
   background: #111;
-  color: #fff;
+
+  color: white;
 }
+
+/* =========================
+   ICONS
+========================= */
 
 .btn-icon {
   width: 20px;
+  height: 20px;
 }
+
+/* =========================
+   LOADING
+========================= */
 
 .btn-loading {
   display: flex;
   align-items: center;
+
   gap: 8px;
 }
 
 .spinner {
   width: 16px;
   height: 16px;
-  border: 2px solid rgba(255,255,255,0.3);
-  border-top-color: white;
+
   border-radius: 50%;
+
+  border: 2px solid rgba(255,255,255,0.3);
+
+  border-top-color: white;
+
   animation: spin 0.8s linear infinite;
 }
 
 @keyframes spin {
-  to { transform: rotate(360deg); }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
+/* =========================
+   NOTE
+========================= */
+
+.hero-note {
+  width: 100%;
+
+  margin-top: 0.5rem;
+
+  color: rgba(255,255,255,0.6);
+}
+
+/* =========================
+   IMAGE
+========================= */
+
 .hero-image {
+  flex: 1;
+
+  display: flex;
+  justify-content: center;
+
   position: relative;
 }
 
 .hero-image img {
-  width: 320px;
-  animation: float 3s ease-in-out infinite;
+  width: 100%;
+  max-width: 320px;
+
+  height: auto;
+
+  object-fit: contain;
+
+  animation: float 4s ease-in-out infinite;
+
+  z-index: 2;
 }
 
 .phone-glow {
   position: absolute;
+
   width: 400px;
   height: 400px;
-  background: radial-gradient(circle, rgba(245,179,1,0.2), transparent);
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(245,179,1,0.15),
+      transparent
+    );
+
+  filter: blur(40px);
+
+  z-index: 1;
 }
 
+/* =========================
+   FLOAT
+========================= */
+
 @keyframes float {
-  50% { transform: translateY(-20px); }
+  50% {
+    transform: translateY(-18px);
+  }
 }
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+  .hero {
+    padding: 7rem 1.2rem 3rem;
+
+    text-align: center;
+  }
+
+  .hero-content {
+    flex-direction: column;
+
+    gap: 2.5rem;
+  }
+
+  .hero-text {
+    max-width: 100%;
+  }
+
+  .hero-text h1 {
+    font-size: 2.3rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .hero-actions {
+    justify-content: center;
+  }
+
+  .hero-btn {
+    width: 100%;
+  }
+
+  .hero-image {
+    width: 100%;
+  }
+
+  .hero-image img {
+    max-width: 260px;
+  }
+
+  .phone-glow {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+/* =========================
+   EXTRA SMALL
+========================= */
+
+@media (max-width: 480px) {
+
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .hero-btn {
+    font-size: 0.95rem;
+
+    padding: 0.95rem 1rem;
+  }
+
+  .hero-image img {
+    max-width: 220px;
+  }
+}
+
 </style>
