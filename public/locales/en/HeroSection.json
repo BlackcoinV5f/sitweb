@@ -1,0 +1,14 @@
+{
+  "title1": "The cryptocurrency you can mine",
+  "title2": "directly on your phone",
+  "subtitle": "Liton Network makes it easy to mine from a mobile app, without excessive energy consumption or expensive hardware.",
+  "btn": {
+    "loading": "Loading…",
+    "unavailable": "Download unavailable",
+    "download": "Download the Liton Network app",
+    "telegram": "Join the Telegram bot",
+    "ios": "iOS (coming soon)"
+  },
+  "note": "Version {version} • {size}",
+  "imgAlt": "Liton Network app interface on smartphone"
+}

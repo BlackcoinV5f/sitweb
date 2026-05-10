@@ -1,43 +1,34 @@
 <template>
-  <section class="stats-section" aria-label="Statistiques">
+  <section class="stats-section" :aria-label="t('StatsSection.aria')">
     <div class="stats-container">
-
-      <div class="stat-card">
-        <div class="stat-number">0%</div>
-        <div class="stat-label">Frais de transaction</div>
+      <div
+        v-for="(stat, index) in stats"
+        :key="index"
+        class="stat-card"
+      >
+        <div class="stat-number">{{ stat.number }}</div>
+        <div class="stat-label">{{ stat.label }}</div>
       </div>
-
-      <div class="stat-card">
-        <div class="stat-number">Éco</div>
-        <div class="stat-label">Mining efficient</div>
-      </div>
-
-      <div class="stat-card">
-        <div class="stat-number">24/7</div>
-        <div class="stat-label">Disponibilité</div>
-      </div>
-
-      <div class="stat-card">
-        <div class="stat-number">Mobile</div>
-        <div class="stat-label">Première</div>
-      </div>
-
     </div>
   </section>
 </template>
 
 <script setup>
-// Pas de logique nécessaire ici
+import { computed } from "vue";
+import { useI18n } from "vue-i18n";
+
+const { t, tm } = useI18n({ useScope: "global" });
+
+// ✅ tm() pour récupérer un tableau depuis les JSON
+const stats = computed(() => tm("StatsSection.stats"));
 </script>
 
 <style scoped>
-/* SECTION */
 .stats-section {
   padding: 4rem 1.5rem;
   background: rgba(0, 0, 0, 0.2);
 }
 
-/* GRID */
 .stats-container {
   max-width: 1200px;
   margin: 0 auto;
@@ -46,7 +37,6 @@
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
 }
 
-/* CARD */
 .stat-card {
   background: var(--card-bg);
   padding: 1.8rem;
@@ -56,13 +46,11 @@
   transition: 0.3s;
 }
 
-/* HOVER */
 .stat-card:hover {
   transform: translateY(-5px);
   border-color: var(--accent);
 }
 
-/* NUMBER */
 .stat-number {
   font-size: 2.2rem;
   font-weight: bold;
@@ -70,20 +58,13 @@
   margin-bottom: 0.5rem;
 }
 
-/* LABEL */
 .stat-label {
   font-size: 0.95rem;
   color: var(--text-secondary);
 }
 
-/* MOBILE */
 @media (max-width: 768px) {
-  .stats-section {
-    padding: 3rem 1rem;
-  }
-
-  .stat-number {
-    font-size: 1.8rem;
-  }
+  .stats-section { padding: 3rem 1rem; }
+  .stat-number   { font-size: 1.8rem; }
 }
 </style>

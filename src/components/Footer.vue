@@ -5,88 +5,82 @@
       <!-- BRAND -->
       <div class="footer-brand">
         <div class="footer-logo">
-          <img :src="logo" alt="Blackcoin Logo" class="footer-logo-img" />
-          <span class="footer-logo-text">Blackcoin</span>
+          <img :src="logo" :alt="t('Footer.logoAlt')" class="footer-logo-img" />
+          <span class="footer-logo-text">{{ t("Footer.brand") }}</span>
         </div>
-        <p class="footer-description">
-          La cryptomonnaie que vous pouvez miner directement sur votre téléphone.
-          Simple, écologique et accessible à tous.
-        </p>
+        <p class="footer-description">{{ t("Footer.description") }}</p>
       </div>
 
-      <!-- SOCIAL -->
-      <div>
-        <h3 class="footer-title">Suivez-nous</h3>
+      <!-- LIENS FUSIONNÉS (gauche) -->
+      <div class="footer-links">
+        <h3 class="footer-title">{{ t("Footer.links.title") }}</h3>
+        <ul class="footer-nav">
+          <li><router-link to="/about">{{ t("Footer.links.about") }}</router-link></li>
+          <li><router-link to="/community">{{ t("Footer.links.community") }}</router-link></li>
+          <li><a href="#">{{ t("Footer.links.legal") }}</a></li>
+          <li><a href="#">{{ t("Footer.links.privacy") }}</a></li>
+          <li><a href="#">{{ t("Footer.links.terms") }}</a></li>
+        </ul>
+      </div>
+
+      <!-- SOCIAL (droite) -->
+      <div class="footer-social">
+        <h3 class="footer-title">{{ t("Footer.social.title") }}</h3>
         <div class="social-links">
 
-          <!-- BOT TELEGRAM -->
-          <a href="https://t.me/Bkc_blackcoinbot" target="_blank" rel="noopener noreferrer" class="social-link">
+          <a href="https://t.me/Ltnnetworkbot" target="_blank" rel="noopener noreferrer"
+            class="social-link" :title="t('Footer.social.telegramBot')">
             <i class="fa-brands fa-telegram"></i>
           </a>
 
-          <!-- COMMUNAUTÉ TELEGRAM -->
-          <a href="https://t.me/+2VYCu2Ygs0Q1YTk0" target="_blank" rel="noopener noreferrer" class="social-link">
+          <a href="https://t.me/ltn_network" target="_blank" rel="noopener noreferrer"
+            class="social-link" :title="t('Footer.social.telegramCommunity')">
             <i class="fa-brands fa-telegram"></i>
           </a>
 
-          <a href="https://www.facebook.com/share/1CjsWSj1P3/" target="_blank" rel="noopener noreferrer" class="social-link">
+          <a href="https://www.facebook.com/share/1CjsWSj1P3/" target="_blank" rel="noopener noreferrer"
+            class="social-link" :title="t('Footer.social.facebook')">
             <i class="fa-brands fa-facebook"></i>
           </a>
 
-          <a href="https://www.youtube.com/@Blackcoinchaine" target="_blank" rel="noopener noreferrer" class="social-link">
+          <a href="https://www.youtube.com/@Blackcoinchaine" target="_blank" rel="noopener noreferrer"
+            class="social-link" :title="t('Footer.social.youtube')">
             <i class="fa-brands fa-youtube"></i>
           </a>
 
-          <a href="https://x.com/BlackcoinON" target="_blank" rel="noopener noreferrer" class="social-link">
+          <a href="https://x.com/Liton_network" target="_blank" rel="noopener noreferrer"
+            class="social-link" :title="t('Footer.social.twitter')">
             <i class="fa-brands fa-x-twitter"></i>
           </a>
 
-          <a href="https://www.instagram.com/blackcoin_bkc" target="_blank" rel="noopener noreferrer" class="social-link">
+          <a href="https://www.instagram.com/liton_network" target="_blank" rel="noopener noreferrer"
+            class="social-link" :title="t('Footer.social.instagram')">
             <i class="fa-brands fa-instagram"></i>
           </a>
 
-          <a href="https://www.tiktok.com/@blackcoin_official" target="_blank" rel="noopener noreferrer" class="social-link">
+          <a href="https://www.tiktok.com/@Liton_network" target="_blank" rel="noopener noreferrer"
+            class="social-link" :title="t('Footer.social.tiktok')">
             <i class="fa-brands fa-tiktok"></i>
           </a>
 
         </div>
       </div>
 
-      <!-- LINKS -->
-      <div>
-        <h3 class="footer-title">Liens utiles</h3>
-        <ul class="footer-nav">
-          <li><router-link to="/whitepaper">Livre blanc</router-link></li>
-          <li><router-link to="/roadmap">Feuille de route</router-link></li>
-          <li><router-link to="/ecosystem">Écosystème</router-link></li>
-          <li><router-link to="/about">À propos</router-link></li>
-          <li><router-link to="/community">Communauté</router-link></li>
-        </ul>
-      </div>
-
-      <!-- LEGAL -->
-      <div>
-        <h3 class="footer-title">Légal</h3>
-        <ul class="footer-nav">
-          <li><a href="#">Mentions légales</a></li>
-          <li><a href="#">Politique de confidentialité</a></li>
-          <li><a href="#">Conditions</a></li>
-        </ul>
-      </div>
-
     </div>
 
     <!-- BOTTOM -->
     <div class="footer-bottom">
-      <p>&copy; {{ currentYear }} Blackcoin. Tous droits réservés.</p>
+      <p>&copy; {{ currentYear }} {{ t("Footer.copyright") }}</p>
     </div>
   </footer>
 </template>
 
 <script setup>
 import { computed } from "vue";
-import logo from "../assets/blackcoin-logo.png";
+import { useI18n } from "vue-i18n";
+import logo from "../assets/liton-logo.png";
 
+const { t } = useI18n({ useScope: "global" });
 const currentYear = computed(() => new Date().getFullYear());
 </script>
 
@@ -96,17 +90,16 @@ const currentYear = computed(() => new Date().getFullYear());
   background: linear-gradient(180deg, #2a1842, #0f0a1a);
 }
 
-/* GRID */
 .footer-content {
   max-width: 1200px;
   margin: auto;
   padding: 3rem 1.5rem;
   display: grid;
-  gap: 2rem;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 2.5rem;
+  align-items: start;
 }
 
-/* BRAND */
 .footer-logo {
   display: flex;
   align-items: center;
@@ -114,90 +107,90 @@ const currentYear = computed(() => new Date().getFullYear());
   margin-bottom: 1rem;
 }
 
-.footer-logo-img {
-  width: 40px;
-}
+.footer-logo-img { width: 40px; }
 
 .footer-logo-text {
   font-weight: bold;
   font-size: 1.3rem;
+  color: white;
 }
 
 .footer-description {
-  font-size: 0.9rem;
-  color: var(--text-secondary);
+  font-size: 0.88rem;
+  color: var(--text-secondary, #94a3b8);
+  line-height: 1.6;
 }
 
-/* TITLES */
 .footer-title {
-  margin-bottom: 1rem;
-  color: var(--accent);
+  margin: 0 0 1rem;
+  color: var(--accent, #facc15);
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
-/* LINKS */
 .footer-nav {
   list-style: none;
-}
-
-.footer-nav li {
-  margin-bottom: 8px;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
 .footer-nav a {
-  color: var(--text-secondary);
+  color: var(--text-secondary, #94a3b8);
   text-decoration: none;
+  font-size: 0.88rem;
+  transition: color 0.2s ease;
 }
 
-.footer-nav a:hover {
-  color: var(--accent);
-}
+.footer-nav a:hover { color: var(--accent, #facc15); }
 
-/* 🔥 SOCIAL */
 .social-links {
   display: flex;
-  gap: 12px;
+  gap: 10px;
   flex-wrap: wrap;
 }
 
 .social-link {
-  width: 42px;
-  height: 42px;
-  background: rgba(255,255,255,0.08);
+  width: 40px;
+  height: 40px;
+  background: rgba(255,255,255,0.07);
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 10px;
-  font-size: 18px;
+  font-size: 17px;
   color: #facc15;
-  transition: 0.3s;
+  text-decoration: none;
+  border: 1px solid rgba(255,255,255,0.08);
+  transition: all 0.25s ease;
 }
 
 .social-link:hover {
-  transform: translateY(-4px) scale(1.1);
+  transform: translateY(-4px) scale(1.08);
   background: #facc15;
   color: #000;
+  border-color: #facc15;
+  box-shadow: 0 4px 14px rgba(250,204,21,0.35);
 }
 
-/* BOTTOM */
 .footer-bottom {
   text-align: center;
   padding: 1.5rem;
-  font-size: 0.85rem;
-  color: var(--text-secondary);
+  font-size: 0.82rem;
+  color: var(--text-secondary, #64748b);
+  border-top: 1px solid rgba(255,255,255,0.06);
 }
 
-/* MOBILE */
 @media (max-width: 768px) {
   .footer-content {
+    grid-template-columns: 1fr;
     text-align: center;
   }
-
-  .footer-logo {
-    justify-content: center;
-  }
-
-  .social-links {
-    justify-content: center;
-  }
+  .footer-logo { justify-content: center; }
+  .footer-nav  { align-items: center; }
+  .social-links { justify-content: center; }
 }
 </style>

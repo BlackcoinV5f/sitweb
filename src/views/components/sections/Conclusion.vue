@@ -4,7 +4,7 @@
     <div class="conclusion-content">
       <p>
         Blackcoin est un projet orienté vers <strong>l'usage, l'éducation et l'accessibilité</strong> 
-        des services financiers numériques. Le token BKC est un outil fonctionnel au service de cette 
+        des services financiers numériques. Le token LTN est un outil fonctionnel au service de cette 
         vision, et non une finalité en soi.
       </p>
       <p>

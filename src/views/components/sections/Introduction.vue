@@ -15,7 +15,7 @@
       l'apprentissage, l'utilisation et l'expérimentation</strong> de services financiers modernes.
     </p>
     <div class="note-box">
-      <p>Le token BKC s'inscrit comme un <strong>outil fonctionnel</strong> au sein de cet écosystème.</p>
+      <p>Le token LTN s'inscrit comme un <strong>outil fonctionnel</strong> au sein de cet écosystème.</p>
     </div>
   </section>
 </template>

@@ -15,7 +15,7 @@
       </div>
       <div class="pillar">
         <div class="pillar-icon">🪙</div>
-        <h4>Token BKC</h4>
+        <h4>Token LTN</h4>
         <p>Outil fonctionnel interne</p>
       </div>
     </div>

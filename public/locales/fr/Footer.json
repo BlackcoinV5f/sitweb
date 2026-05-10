@@ -1,0 +1,24 @@
+{
+  "logoAlt": "Blackcoin Logo",
+  "brand": "Liton Network",
+  "description": "La cryptomonnaie que vous pouvez miner directement sur votre téléphone. Simple, écologique et accessible à tous.",
+  "links": {
+    "title": "Liens",
+    "about": "À propos",
+    "community": "Communauté",
+    "legal": "Mentions légales",
+    "privacy": "Politique de confidentialité",
+    "terms": "Conditions"
+  },
+  "social": {
+    "title": "Suivez-nous",
+    "telegramBot": "Telegram Bot",
+    "telegramCommunity": "Communauté Telegram",
+    "facebook": "Facebook",
+    "youtube": "YouTube",
+    "twitter": "X / Twitter",
+    "instagram": "Instagram",
+    "tiktok": "TikTok"
+  },
+  "copyright": "Liton Network. Tous droits réservés."
+}

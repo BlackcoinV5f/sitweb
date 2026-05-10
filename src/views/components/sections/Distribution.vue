@@ -1,7 +1,7 @@
 <template>
   <section id="distribution">
     <h2><span class="section-number">7.</span> Distribution et gestion du token</h2>
-    <p>La distribution du token BKC est conçue pour assurer le bon fonctionnement de l'écosystème :</p>
+    <p>La distribution du token LTN est conçue pour assurer le bon fonctionnement de l'écosystème :</p>
     <div class="distribution-grid">
       <div class="dist-item">
         <h4>🔄 Utilisation interne</h4>

@@ -1,23 +1,23 @@
 <template>
   <section id="token">
-    <h2><span class="section-number">6.</span> Le token BKC</h2>
+    <h2><span class="section-number">6.</span> Le token LTN</h2>
     
     <div class="token-info-card">
       <h3>6.1 Rôle du token</h3>
-      <p>Le token BKC est un <strong class="keyword">outil utilitaire</strong> au sein de l'écosystème Blackcoin :</p>
+      <p>Le token LTN est un <strong class="keyword">outil utilitaire</strong> au sein de l'écosystème Blackcoin :</p>
       <ul>
         <li>🔓 Accès à certaines fonctionnalités spécifiques</li>
         <li>💳 Règlement de services internes</li>
         <li>🤝 Facilitation des interactions au sein de la plateforme</li>
       </ul>
       <div class="token-warning">
-        <p>La détention de BKC ne confère <strong>aucun droit financier, aucun dividende et aucune promesse de rendement</strong>.</p>
+        <p>La détention de LTN ne confère <strong>aucun droit financier, aucun dividende et aucune promesse de rendement</strong>.</p>
       </div>
     </div>
 
     <h3>6.2 Utilisation du token</h3>
     <p>
-      Le BKC est destiné à un usage strictement fonctionnel. Son rôle est limité aux besoins 
+      Le LTN est destiné à un usage strictement fonctionnel. Son rôle est limité aux besoins 
       opérationnels de la plateforme. L'utilisation du token est indépendante de la participation 
       à la phase de minage ou aux services premium.
     </p>

@@ -1,0 +1,21 @@
+{
+  "aria": "Why Liton Network is different",
+  "title": "Why Liton Network is different",
+  "cards": [
+    {
+      "icon": "💻",
+      "title": "Complex mining",
+      "text": "Traditional cryptocurrencies require specialized and expensive hardware."
+    },
+    {
+      "icon": "⚠️",
+      "title": "High risks",
+      "text": "Investing requires knowledge that few people have."
+    },
+    {
+      "icon": "🚀",
+      "title": "Liton solution",
+      "text": "Mine directly from your phone, simply and safely."
+    }
+  ]
+}

@@ -1,47 +1,49 @@
 <template>
-  <section class="problem-section" aria-labelledby="problem-title">
+  <section class="problem-section" :aria-labelledby="t('ProblemSection.aria')">
     <div class="problem-container">
+
       <h2 id="problem-title" class="section-title">
-        Pourquoi Blackcoin est différent
+        {{ t("ProblemSection.title") }}
       </h2>
 
       <div class="problem-grid">
-        <div class="problem-card">
-          <div class="problem-icon">💻</div>
-          <h3>Mining complexe</h3>
-          <p>Les cryptos traditionnelles nécessitent du matériel spécialisé et coûteux.</p>
-        </div>
-
-        <div class="problem-card">
-          <div class="problem-icon">⚠️</div>
-          <h3>Risques élevés</h3>
-          <p>Investir demande des connaissances que peu possèdent.</p>
-        </div>
-
-        <div class="problem-card">
-          <div class="problem-icon">🚀</div>
-          <h3>Solution Blackcoin</h3>
-          <p>Minez directement depuis votre téléphone, simplement et en toute sécurité.</p>
+        <div
+          v-for="(card, index) in cards"
+          :key="index"
+          class="problem-card"
+        >
+          <div class="problem-icon">{{ card.icon }}</div>
+          <h3>{{ card.title }}</h3>
+          <p>{{ card.text }}</p>
         </div>
       </div>
+
     </div>
 
+    <!-- WAVE DIVIDER -->
     <div class="wave-divider">
       <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
-        <path d="M0,60 C240,100 480,20 720,40 C960,60 1200,100 1440,80 L1440,120 L0,120 Z" fill="#1f0f33"/>
+        <path
+          d="M0,60 C240,100 480,20 720,40 C960,60 1200,100 1440,80 L1440,120 L0,120 Z"
+          fill="#1f0f33"
+        />
       </svg>
     </div>
+
   </section>
 </template>
 
 <script setup>
-// Aucun script nécessaire pour cette section pour l'instant
+import { computed } from "vue";
+import { useI18n } from "vue-i18n";
+
+const { t, tm } = useI18n({ useScope: "global" });
+
+// ✅ tm() pour récupérer le tableau de cartes
+const cards = computed(() => tm("ProblemSection.cards"));
 </script>
 
 <style scoped>
-/* =========================
-   PROBLEM SECTION
-   ========================= */
 .problem-section {
   padding: 6rem 2rem 8rem;
   position: relative;
@@ -79,8 +81,8 @@
 
 .problem-card:hover {
   transform: translateY(-10px);
-  border-color: #a78bfa; /* couleur accentuée */
-  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+  border-color: #a78bfa;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 
 .problem-icon {
@@ -89,7 +91,7 @@
 }
 
 .problem-card h3 {
-  color: #a78bfa; /* couleur accent */
+  color: #a78bfa;
   margin-bottom: 1rem;
   font-size: 1.5rem;
   font-weight: 600;

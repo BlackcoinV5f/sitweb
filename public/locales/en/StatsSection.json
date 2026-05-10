@@ -1,0 +1,9 @@
+{
+  "aria": "Statistics",
+  "stats": [
+    { "number": "0%",     "label": "Transaction fees"  },
+    { "number": "Eco",    "label": "Efficient mining"  },
+    { "number": "24/7",   "label": "Availability"      },
+    { "number": "Mobile", "label": "First"             }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "title1": "La cryptomonnaie que vous pouvez miner",
+  "title2": "directement sur votre téléphone",
+  "subtitle": "Liton Network permet de miner facilement depuis une application mobile, sans consommation excessive d'énergie ni matériel coûteux.",
+  "btn": {
+    "loading": "Chargement…",
+    "unavailable": "Téléchargement indisponible",
+    "download": "Télécharger l'application Liton Network",
+    "telegram": "Rejoindre le bot Telegram",
+    "ios": "iOS (bientôt disponible)"
+  },
+  "note": "Version {version} • {size}",
+  "imgAlt": "Interface de l'application Liton Network sur smartphone"
+}

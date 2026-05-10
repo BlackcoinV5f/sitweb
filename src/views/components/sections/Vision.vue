@@ -13,7 +13,7 @@
     </ul>
     <div class="warning-box">
       <p>
-        <strong>Le token BKC n'est pas conçu comme un produit d'investissement, 
+        <strong>Le token LTN n'est pas conçu comme un produit d'investissement, 
         mais comme un instrument utilitaire</strong> destiné à faciliter l'utilisation 
         de certains services de la plateforme.
       </p>

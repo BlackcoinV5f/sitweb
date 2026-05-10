@@ -1,0 +1,10 @@
+{
+  "aria": "Ready to get started?",
+  "title": "Ready to get started?",
+  "text": "Join thousands of users already mining Liton Network. Download the app and start today.",
+  "btn": {
+    "loading": "Preparing…",
+    "unavailable": "Coming soon",
+    "start": "🚀 Start mining"
+  }
+}

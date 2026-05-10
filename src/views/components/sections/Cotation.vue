@@ -4,7 +4,7 @@
     <div class="warning-box">
       <p>
         L'équipe Blackcoin pourra, le moment venu, étudier les possibilités d'intégration 
-        du token BKC sur des plateformes d'échange compatibles. <strong>Toutefois :</strong>
+        du token LTN sur des plateformes d'échange compatibles. <strong>Toutefois :</strong>
       </p>
       <ul>
         <li>❌ <strong>Aucune cotation n'est garantie</strong></li>

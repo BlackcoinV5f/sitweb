@@ -7,12 +7,12 @@
 
     <article class="whitepaper-container">
       <header class="document-header">
-        <h1>LIVRE BLANC BLACKCOIN (BKC)</h1>
+        <h1>LIVRE BLANC BLACKCOIN (LTN)</h1>
         <p class="document-subtitle">
           Plateforme d'éducation et d'accès aux services financiers numériques
         </p>
         <div class="warning-banner">
-          ⚠️ <strong>Document informatif</strong> — Le token BKC est un outil utilitaire, 
+          ⚠️ <strong>Document informatif</strong> — Le token LTN est un outil utilitaire, 
           ne constitue pas un produit d'investissement et ne garantit aucun rendement.
         </div>
       </header>
@@ -48,12 +48,12 @@
           <div class="social-icons">
             
             <!-- BOT TELEGRAM -->
-            <a href="https://t.me/Bkc_blackcoinbot" target="_blank" rel="noopener noreferrer" title="Bot Telegram">
+            <a href="https://t.me/Ltnnetworkbot" target="_blank" rel="noopener noreferrer" title="Bot Telegram">
               <i class="fab fa-telegram"></i>
             </a>
 
             <!-- COMMUNAUTÉ TELEGRAM -->
-            <a href="https://t.me/+2VYCu2Ygs0Q1YTk0" target="_blank" rel="noopener noreferrer" title="Communauté Telegram">
+            <a href="https://t.me/ltn_network" target="_blank" rel="noopener noreferrer" title="Communauté Telegram">
               <i class="fab fa-telegram-plane"></i>
             </a>
 
@@ -61,11 +61,11 @@
               <i class="fab fa-facebook"></i>
             </a>
 
-            <a href="https://x.com/BlackcoinON" target="_blank" rel="noopener noreferrer" title="X">
+            <a href="https://x.com/Liton_network" target="_blank" rel="noopener noreferrer" title="X">
               <i class="fab fa-x-twitter"></i>
             </a>
 
-            <a href="https://www.instagram.com/blackcoin_bkc" target="_blank" rel="noopener noreferrer" title="Instagram">
+            <a href="https://www.instagram.com/blackcoin_LTN" target="_blank" rel="noopener noreferrer" title="Instagram">
               <i class="fab fa-instagram"></i>
             </a>
 
@@ -73,7 +73,7 @@
               <i class="fab fa-youtube"></i>
             </a>
 
-            <a href="https://www.tiktok.com/@blackcoin_official" target="_blank" rel="noopener noreferrer" title="TikTok">
+            <a href="https://www.tiktok.com/@Liton_network" target="_blank" rel="noopener noreferrer" title="TikTok">
               <i class="fab fa-tiktok"></i>
             </a>
 
@@ -123,7 +123,7 @@ export default {
         { id: 'ecosysteme', title: 'Écosystème' },
         { id: 'minage', title: 'Phase de minage' },
         { id: 'progression', title: 'Progression et services' },
-        { id: 'token', title: 'Token BKC' },
+        { id: 'token', title: 'Token LTN' },
         { id: 'distribution', title: 'Distribution' },
         { id: 'cotation', title: 'Cotation' },
         { id: 'reglementation', title: 'Réglementation' },
