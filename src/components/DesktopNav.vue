@@ -12,7 +12,9 @@
         class="dropdown-trigger"
         :aria-expanded="dropdownOpen"
       >
-        <span>{{ t('DesktopNav.nav.blockchain') }}</span>
+        <span>
+          {{ t("DesktopNav.nav.blockchain") }}
+        </span>
 
         <span
           class="dropdown-arrow"
@@ -34,14 +36,14 @@
             to="/whitepaper"
             class="dropdown-item"
           >
-            {{ t('DesktopNav.nav.whitepaper') }}
+            {{ t("DesktopNav.nav.whitepaper") }}
           </router-link>
 
           <router-link
             to="/roadmap"
             class="dropdown-item"
           >
-            {{ t('DesktopNav.nav.roadmap') }}
+            {{ t("DesktopNav.nav.roadmap") }}
           </router-link>
 
         </div>
@@ -56,24 +58,24 @@
       to="/ecosystem"
       class="nav-link"
     >
-      {{ t('DesktopNav.nav.ecosystem') }}
+      {{ t("DesktopNav.nav.ecosystem") }}
     </router-link>
 
     <router-link
       to="/about"
       class="nav-link"
     >
-      {{ t('DesktopNav.nav.about') }}
+      {{ t("DesktopNav.nav.about") }}
     </router-link>
 
     <router-link
       to="/community"
       class="nav-link"
     >
-      {{ t('DesktopNav.nav.community') }}
+      {{ t("DesktopNav.nav.community") }}
     </router-link>
 
-    <!-- LANGUAGE -->
+    <!-- LANGUAGE SWITCH -->
 
     <div class="language-switch">
 
@@ -100,6 +102,7 @@
 
 <script setup>
 import { ref } from "vue";
+
 import { useI18n } from "vue-i18n";
 
 /* =========================
@@ -120,13 +123,10 @@ const dropdownOpen = ref(false);
 
 const changeLanguage = (lang) => {
 
-  // Change vue-i18n locale
   locale.value = lang;
 
-  // Save language
   localStorage.setItem("lang", lang);
 
-  // Update html lang=""
   document.documentElement.lang = lang;
 
 };
