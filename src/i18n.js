@@ -8,7 +8,7 @@ const SUPPORTED_LOCALES = ["fr", "en"];
 
 const namespaces = [
   "CtaSection",
-  "DesktopNav", // ✅ AJOUTÉ
+  "DesktopNav",
   "MobileMenu",
   "Distribution",
   "Ecosystem",
@@ -29,6 +29,10 @@ const namespaces = [
   "Token",
   "Vision",
   "Whitepaper",
+
+  // LEGAL PAGES
+  "PrivacyPolicy",
+  "TermsOfUse",
 ];
 
 // ========================

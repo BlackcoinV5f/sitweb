@@ -18,8 +18,16 @@
           <li><router-link to="/about">{{ t("Footer.links.about") }}</router-link></li>
           <li><router-link to="/community">{{ t("Footer.links.community") }}</router-link></li>
           <li><a href="#">{{ t("Footer.links.legal") }}</a></li>
-          <li><a href="#">{{ t("Footer.links.privacy") }}</a></li>
-          <li><a href="#">{{ t("Footer.links.terms") }}</a></li>
+          <li>
+  <router-link to="/privacy-policy">
+    {{ t("Footer.links.privacy") }}
+  </router-link>
+</li>
+          <li>
+  <router-link to="/terms-of-use">
+    {{ t("Footer.links.terms") }}
+  </router-link>
+</li>
         </ul>
       </div>
 

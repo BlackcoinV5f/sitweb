@@ -2,50 +2,214 @@
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-    <title>Liton Network — Blockchain & Web3 Innovation</title>
+    <title>Liton Network — Blockchain & Web3 Innovation | Solutions Crypto Sécurisées</title>
 
+    <!-- META DESCRIPTION -->
     <meta
       name="description"
-      content="Liton Network est une plateforme blockchain moderne dédiée à l'innovation Web3, aux solutions crypto et à la sécurité numérique."
+      content="Liton Network est une plateforme blockchain moderne dédiée à l'innovation Web3, aux solutions crypto et à la sécurité numérique. Rejoignez l'écosystème décentralisé de demain."
     />
+    <meta name="keywords" content="blockchain, Web3, crypto, Liton Network, innovation numérique, sécurité blockchain, portefeuille crypto, DeFi" />
+    <meta name="author" content="Liton Network" />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="French" />
+    <meta name="revisit-after" content="7 days" />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!-- FAVICON -->
+    <!-- FAVICON - Multi-format pour compatibilité -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
     <link rel="icon" type="image/png" href="/favicon.png" />
 
-    <!-- FONT AWESOME -->
+    <!-- FONTS -->
+    <link 
+      rel="preconnect" 
+      href="https://fonts.googleapis.com"
+    />
+    <link 
+      rel="preconnect" 
+      href="https://fonts.gstatic.com" 
+      crossorigin
+    />
+    <link 
+      href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&family=Space+Grotesk:wght@400;500;600;700&display=swap" 
+      rel="stylesheet"
+    />
+
+    <!-- FONT AWESOME 6 -->
     <link 
       rel="stylesheet" 
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
 
-    <!-- GOOGLE / SEO -->
-    <meta property="og:title" content="Liton Network" />
+    <!-- OPEN GRAPH / FACEBOOK -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Liton Network — Blockchain & Web3 Innovation" />
+    <meta property="og:description" content="Plateforme blockchain moderne pour l'innovation Web3, solutions crypto et sécurité numérique." />
+    <meta property="og:image" content="https://litonnetwork.com/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:url" content="https://litonnetwork.com" />
+    <meta property="og:site_name" content="Liton Network" />
+    <meta property="og:locale" content="fr_FR" />
 
-    <meta
-      property="og:description"
-      content="Blockchain moderne et innovation Web3."
-    />
+    <!-- TWITTER CARD -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Liton Network — Blockchain & Web3 Innovation" />
+    <meta name="twitter:description" content="Plateforme blockchain moderne pour l'innovation Web3, solutions crypto et sécurité numérique." />
+    <meta name="twitter:image" content="https://litonnetwork.com/twitter-image.jpg" />
+    <meta name="twitter:site" content="@litonnetwork" />
 
-    <meta property="og:image" content="/favicon.png" />
-
-    <!-- ORGANIZATION -->
+    <!-- ORGANIZATION SCHEMA (JSON-LD) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Organization",
       "name": "Liton Network",
       "url": "https://litonnetwork.com",
-      "logo": "https://litonnetwork.com/favicon.png"
+      "logo": "https://litonnetwork.com/logo.png",
+      "sameAs": [
+        "https://twitter.com/litonnetwork",
+        "https://linkedin.com/company/liton-network",
+        "https://github.com/litonnetwork"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "email": "support@litonnetwork.com",
+        "contactType": "customer service",
+        "availableLanguage": ["French", "English"]
+      },
+      "description": "Plateforme blockchain moderne dédiée à l'innovation Web3, aux solutions crypto et à la sécurité numérique."
     }
     </script>
 
+    <!-- WEB SITE SCHEMA -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Liton Network",
+      "url": "https://litonnetwork.com",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://litonnetwork.com/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+
+    <!-- PRELOAD CRITICAL RESOURCES -->
+    <link rel="preload" href="/src/main.js" as="script" />
+    <link rel="preconnect" href="https://api.litonnetwork.com" />
+
+    <!-- THEME COLOR FOR MOBILE BROWSERS -->
+    <meta name="theme-color" content="#0f0a1a" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <!-- SECURITY HEADERS (via meta, mais mieux en HTTP) -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta http-equiv="X-Frame-Options" content="DENY" />
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!-- CSS CRITICAL (inline pour éviter FOUC) -->
+    <style>
+      /* Critical CSS pour éviter le flash de contenu non stylisé */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        background: linear-gradient(135deg, #0f0a1a 0%, #1a1428 50%, #0f0a1a 100%);
+        min-height: 100vh;
+        color: #ffffff;
+        line-height: 1.5;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      /* Loader minimal pour l'expérience utilisateur */
+      #app {
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+      }
+
+      #app.loaded {
+        opacity: 1;
+      }
+
+      /* Scrollbar personnalisée */
+      ::-webkit-scrollbar {
+        width: 10px;
+        height: 10px;
+      }
+
+      ::-webkit-scrollbar-track {
+        background: #1a1428;
+      }
+
+      ::-webkit-scrollbar-thumb {
+        background: #facc15;
+        border-radius: 5px;
+      }
+
+      ::-webkit-scrollbar-thumb:hover {
+        background: #eab308;
+      }
+    </style>
+
+    <!-- ANALYTICS (à activer avec votre propre ID) -->
+    <!--
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
+    -->
   </head>
 
   <body>
     <div id="app"></div>
+
     <script type="module" src="/src/main.js"></script>
+
+    <!-- Script pour gérer le chargement de l'app -->
+    <script>
+      (function() {
+        // Détecte quand l'application Vue est montée
+        const appElement = document.getElementById('app');
+        
+        // Crée un observer pour détecter quand l'app est chargée
+        const observer = new MutationObserver(function(mutations) {
+          mutations.forEach(function(mutation) {
+            if (mutation.type === 'childList' && appElement.children.length > 0) {
+              appElement.classList.add('loaded');
+              observer.disconnect();
+            }
+          });
+        });
+        
+        observer.observe(appElement, { childList: true, subtree: false });
+        
+        // Fallback timeout
+        setTimeout(() => {
+          appElement.classList.add('loaded');
+          observer.disconnect();
+        }, 1000);
+      })();
+    </script>
   </body>
 </html>
