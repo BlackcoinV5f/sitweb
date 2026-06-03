@@ -3,8 +3,8 @@ import { createRouter, createWebHistory } from "vue-router";
 import Home from "../views/Home.vue";
 import Whitepaper from "../views/Whitepaper.vue";
 
-import PrivacyPolicy from "../views/PrivacyPolicy.vue";
-import TermsOfUse from "../views/TermsOfUse.vue";
+import PrivacyPolicy from "../views/pages/PrivacyPolicy.vue";
+import TermsOfUse from "../views/pages/TermsOfUse.vue";
 
 const routes = [
   {
