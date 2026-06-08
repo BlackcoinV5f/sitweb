@@ -1,1 +1,15 @@
-{}
+{
+  "sectionNumber": "2.",
+  "title": "Project Vision and Objectives",
+  "p1Start": "Blackcoin is first and foremost a",
+  "p1Keyword": "digital financial services platform",
+  "p1End": "The main objective is to provide users with tools, content, and services enabling them to:",
+  "objectives": [
+    "Better understand the world of finance and digital assets",
+    "Access structured and educational information",
+    "Use digital financial services in a unified environment",
+    "Interact with innovative features in a progressive and guided manner"
+  ],
+  "warningBold": "The LTN token is not designed as an investment product, but as a utility instrument",
+  "warningEnd": "intended to facilitate the use of certain platform services."
+}

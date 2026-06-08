@@ -1,6 +1,6 @@
 <template>
   <div class="contact-box">
-    <p>{{ text }}</p>
+    <p>{{ text || $t('PrivacyPolicy.contact.text') }}</p>
     <a :href="`mailto:${email}`" class="contact-link">
       ✉️ {{ email }}
     </a>
@@ -13,7 +13,7 @@ export default {
   props: {
     text: {
       type: String,
-      default: 'Pour toute question concernant la présente Politique de Confidentialité :'
+      default: ''
     },
     email: {
       type: String,
@@ -30,12 +30,10 @@ export default {
   border-radius: 16px;
   padding: 1.5rem;
 }
-
 .contact-box p {
   color: #cbd5e1;
   margin-bottom: 1rem;
 }
-
 .contact-link {
   display: inline-flex;
   align-items: center;
@@ -48,7 +46,6 @@ export default {
   font-weight: 600;
   transition: all 0.3s ease;
 }
-
 .contact-link:hover {
   transform: translateY(-2px);
   box-shadow: 0 8px 25px rgba(250, 204, 21, 0.3);

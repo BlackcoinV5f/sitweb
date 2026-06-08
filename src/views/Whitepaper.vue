@@ -1,19 +1,18 @@
 <template>
   <main class="whitepaper-wrapper">
     <TableOfContents 
-      :sections="sections" 
+      :sections="localizedSections" 
       @download-pdf="downloadPDF" 
     />
 
     <article class="whitepaper-container">
       <header class="document-header">
-        <h1>LIVRE BLANC BLACKCOIN (LTN)</h1>
+        <h1>{{ $t('Whitepaper.header.title') }}</h1>
         <p class="document-subtitle">
-          Plateforme d'éducation et d'accès aux services financiers numériques
+          {{ $t('Whitepaper.header.subtitle') }}
         </p>
         <div class="warning-banner">
-          ⚠️ <strong>Document informatif</strong> — Le token LTN est un outil utilitaire, 
-          ne constitue pas un produit d'investissement et ne garantit aucun rendement.
+          ⚠️ <strong>{{ $t('Whitepaper.header.warning') }}</strong> — {{ $t('Whitepaper.header.warningText') }}
         </div>
       </header>
 
@@ -33,52 +32,47 @@
       <footer class="document-footer">
         <div class="footer-content">
           <p class="disclaimer">
-            <strong>Document informatif</strong> — Version 1.0 — Dernière mise à jour : Mars 2024<br>
-            Ce document ne constitue pas une offre financière, un conseil en investissement 
-            ou une sollicitation d'achat. Consultez nos CGU pour plus d'informations.
+            <strong>{{ $t('Whitepaper.footer.disclaimerLabel') }}</strong> — {{ $t('Whitepaper.footer.disclaimerVersion') }}<br>
+            {{ $t('Whitepaper.footer.disclaimerText') }}
           </p>
 
           <div class="footer-links">
-            <a href="#">Conditions Générales</a>
-            <a href="#">Politique de confidentialité</a>
-            <a href="#">Contact</a>
+            <a href="#">{{ $t('Whitepaper.footer.links.terms') }}</a>
+            <a href="#">{{ $t('Whitepaper.footer.links.privacy') }}</a>
+            <a href="#">{{ $t('Whitepaper.footer.links.contact') }}</a>
           </div>
 
-          <!-- 🔥 RÉSEAUX SOCIAUX AVEC ICÔNES -->
           <div class="social-icons">
-            
-            <!-- BOT TELEGRAM -->
-            <a href="https://t.me/Ltnnetworkbot" target="_blank" rel="noopener noreferrer" title="Bot Telegram">
+
+            <a href="https://t.me/Ltnnetworkbot" target="_blank" rel="noopener noreferrer" :title="$t('Whitepaper.footer.social.telegramBot')">
               <i class="fab fa-telegram"></i>
             </a>
 
-            <!-- COMMUNAUTÉ TELEGRAM -->
-            <a href="https://t.me/ltn_network" target="_blank" rel="noopener noreferrer" title="Communauté Telegram">
+            <a href="https://t.me/ltn_network" target="_blank" rel="noopener noreferrer" :title="$t('Whitepaper.footer.social.telegramCommunity')">
               <i class="fab fa-telegram-plane"></i>
             </a>
 
-            <a href="https://www.facebook.com/share/1CjsWSj1P3/" target="_blank" rel="noopener noreferrer" title="Facebook">
+            <a href="https://www.facebook.com/share/1CjsWSj1P3/" target="_blank" rel="noopener noreferrer" :title="$t('Whitepaper.footer.social.facebook')">
               <i class="fab fa-facebook"></i>
             </a>
 
-            <a href="https://x.com/Liton_network" target="_blank" rel="noopener noreferrer" title="X">
+            <a href="https://x.com/Liton_network" target="_blank" rel="noopener noreferrer" :title="$t('Whitepaper.footer.social.twitter')">
               <i class="fab fa-x-twitter"></i>
             </a>
 
-            <a href="https://www.instagram.com/blackcoin_LTN" target="_blank" rel="noopener noreferrer" title="Instagram">
+            <a href="https://www.instagram.com/blackcoin_LTN" target="_blank" rel="noopener noreferrer" :title="$t('Whitepaper.footer.social.instagram')">
               <i class="fab fa-instagram"></i>
             </a>
 
-            <a href="https://www.youtube.com/@Blackcoinchaine" target="_blank" rel="noopener noreferrer" title="YouTube">
+            <a href="https://www.youtube.com/@Blackcoinchaine" target="_blank" rel="noopener noreferrer" :title="$t('Whitepaper.footer.social.youtube')">
               <i class="fab fa-youtube"></i>
             </a>
 
-            <a href="https://www.tiktok.com/@Liton_network" target="_blank" rel="noopener noreferrer" title="TikTok">
+            <a href="https://www.tiktok.com/@Liton_network" target="_blank" rel="noopener noreferrer" :title="$t('Whitepaper.footer.social.tiktok')">
               <i class="fab fa-tiktok"></i>
             </a>
 
           </div>
-
         </div>
       </footer>
     </article>
@@ -86,6 +80,8 @@
 </template>
 
 <script>
+import { useI18n } from 'vue-i18n'
+import { computed } from 'vue'
 import TableOfContents from './components/TableOfContents.vue'
 import Introduction from './components/sections/Introduction.vue'
 import Vision from './components/sections/Vision.vue'
@@ -115,26 +111,19 @@ export default {
     Risks,
     Conclusion
   },
-  data() {
-    return {
-      sections: [
-        { id: 'introduction', title: 'Introduction' },
-        { id: 'vision', title: 'Vision et objectifs' },
-        { id: 'ecosysteme', title: 'Écosystème' },
-        { id: 'minage', title: 'Phase de minage' },
-        { id: 'progression', title: 'Progression et services' },
-        { id: 'token', title: 'Token LTN' },
-        { id: 'distribution', title: 'Distribution' },
-        { id: 'cotation', title: 'Cotation' },
-        { id: 'reglementation', title: 'Réglementation' },
-        { id: 'risques', title: 'Analyse des risques' },
-        { id: 'conclusion', title: 'Conclusion' }
-      ]
-    }
+  setup() {
+    const { tm, locale } = useI18n()
+
+    // Sections réactives à la langue courante
+    const localizedSections = computed(() =>
+      tm('Whitepaper.sections').map(s => ({ id: s.id, title: s.title }))
+    )
+
+    return { localizedSections, locale }
   },
   methods: {
     downloadPDF() {
-      alert('Fonctionnalité PDF à implémenter');
+      alert('Fonctionnalité PDF à implémenter')
     }
   }
 }
@@ -143,7 +132,6 @@ export default {
 <style scoped>
 @import './styles/whitepaper.css';
 
-/* 🔥 SOCIAL ICONS PRO STYLE */
 .social-icons {
   margin-top: 25px;
   display: flex;

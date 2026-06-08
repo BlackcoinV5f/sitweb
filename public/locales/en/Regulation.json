@@ -1,1 +1,28 @@
-{}
+{
+  "title": "Regulatory Framework and Compliance",
+
+  "description": "Liton Network follows a progressive compliance approach:",
+
+  "items": {
+
+    "utility": {
+      "title": "Avoid classification as a financial product",
+      "text": "Clear utility-based approach"
+    },
+
+    "separation": {
+      "title": "Separation between usage / participation / token",
+      "text": "Clear distinction between components"
+    },
+
+    "transparency": {
+      "title": "Transparent information",
+      "text": "Clear and regular communication"
+    }
+
+  },
+
+  "legalLabel": "Legal notice:",
+
+  "legalNote": "Users are responsible for ensuring that their use complies with the laws applicable in their jurisdiction. The Blackcoin platform is not accessible to residents of certain restrictive jurisdictions."
+}

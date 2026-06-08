@@ -1,0 +1,219 @@
+{
+  "header": {
+    "badge": "Legal Document",
+    "title": "Terms of Use",
+    "date": "June 2, 2026"
+  },
+  "intro": {
+    "title": "Liton Network",
+    "description": "These Terms of Use govern access to and use of the Liton Network platform and the services offered.",
+    "highlight": "By creating an account or using the application, you fully agree to these terms."
+  },
+  "sections": {
+    "s01": {
+      "number": "01",
+      "title": "Purpose of the Service",
+      "paragraphs": ["Liton Network offers a digital platform enabling, among other things:"],
+      "listItems": [
+        "The creation of user accounts",
+        "The use of an internal wallet",
+        "The deposit of digital funds",
+        "Access to features related to digital assets and services offered on the platform"
+      ],
+      "note": "The platform may evolve at any time with the addition, modification, or removal of certain features."
+    },
+    "s02": {
+      "number": "02",
+      "title": "Registration Requirements",
+      "paragraphs": ["To use the platform, the user must:"],
+      "listItems": [
+        "Provide accurate and up-to-date information",
+        "Be legally authorized to use this type of service under the laws of their country",
+        "Secure their login credentials"
+      ],
+      "important": "The user is responsible for all activities carried out from their account."
+    },
+    "s03": {
+      "number": "03",
+      "title": "Identity Verification (KYC)",
+      "paragraphs": [
+        "Liton Network may require an identity verification process (KYC) before access to certain features.",
+        "The user agrees to provide the requested documents in order to:"
+      ],
+      "listItems": [
+        "Confirm their identity",
+        "Prevent fraud",
+        "Prevent duplicate accounts",
+        "Comply with applicable legal and regulatory obligations"
+      ],
+      "warning": {
+        "title": "Any refusal to verify may result in:",
+        "items": [
+          "Account limitation",
+          "Account suspension",
+          "Permanent account closure"
+        ]
+      }
+    },
+    "s04": {
+      "number": "04",
+      "title": "Internal Wallet and Deposits",
+      "paragraphs": [
+        "Liton Network uses an internal wallet system.",
+        "When a user makes a deposit:"
+      ],
+      "listItems": [
+        "A deposit address may be generated",
+        "Funds are verified before being credited",
+        "The corresponding amount is then added to the user's internal wallet"
+      ],
+      "infoBox": {
+        "title": "Liton Network never asks for:",
+        "items": [
+          "Users' private keys",
+          "Recovery phrases (seed phrase)",
+          "Access to external personal wallets"
+        ]
+      },
+      "warningBox": {
+        "title": "The user is solely responsible for:",
+        "items": [
+          "The accuracy of deposit information",
+          "Sending funds to the correct address",
+          "Choosing the appropriate transfer network"
+        ]
+      },
+      "note": "The platform cannot be held responsible for losses resulting from a user error, an incorrect blockchain network, a transfer to an incorrect address, or an error from a third-party service."
+    },
+    "s05": {
+      "number": "05",
+      "title": "Prohibited Activities",
+      "paragraphs": ["It is strictly prohibited to:"],
+      "dangerList": [
+        "Create multiple fraudulent accounts",
+        "Use false information",
+        "Impersonate another person",
+        "Use the platform for illegal activities",
+        "Attempt to bypass security systems",
+        "Exploit bugs or technical vulnerabilities",
+        "Manipulate reward, investment, or referral systems"
+      ],
+      "warning": {
+        "title": "Any violation may result in:",
+        "items": [
+          "Immediate account suspension",
+          "Temporary or permanent blocking of funds where permitted by law",
+          "Reporting to the relevant authorities"
+        ]
+      }
+    },
+    "s06": {
+      "number": "06",
+      "title": "Account Security",
+      "paragraphs": ["The user is responsible for the confidentiality of:"],
+      "listItems": [
+        "Their password",
+        "Their security codes",
+        "Their login information"
+      ],
+      "important": "In the event of suspected unauthorized access, the user must immediately contact Liton Network support."
+    },
+    "s07": {
+      "number": "07",
+      "title": "Financial Risks",
+      "paragraphs": [
+        "Digital assets and investment-related services carry significant risks.",
+        "The user acknowledges that:"
+      ],
+      "listItems": [
+        "Values may fluctuate significantly",
+        "Financial losses may occur",
+        "No income or profit is guaranteed"
+      ],
+      "warningBox": {
+        "title": "Liton Network does not provide any personalized financial, tax, or legal advice.",
+        "note": "Each user remains solely responsible for their financial decisions."
+      }
+    },
+    "s08": {
+      "number": "08",
+      "title": "Account Suspension or Closure",
+      "paragraphs": ["Liton Network reserves the right to suspend or close an account in the event of:"],
+      "listItems": [
+        "Suspected fraud",
+        "Non-compliance with these terms",
+        "Illegal activity",
+        "Risk to platform security"
+      ],
+      "note": "Certain verifications may be required before any withdrawal or account reactivation."
+    },
+    "s09": {
+      "number": "09",
+      "title": "Service Availability",
+      "paragraphs": [
+        "We do our best to ensure the continuous availability of the platform.",
+        "However, Liton Network does not guarantee:"
+      ],
+      "listItems": [
+        "The absence of interruptions",
+        "The absence of technical errors",
+        "The permanent availability of services"
+      ],
+      "note": "Maintenance operations or technical incidents may temporarily affect access to the application."
+    },
+    "s10": {
+      "number": "10",
+      "title": "Limitation of Liability",
+      "paragraphs": ["To the extent permitted by law, Liton Network cannot be held liable for:"],
+      "listItems": [
+        "Financial losses",
+        "Data losses",
+        "Service interruptions",
+        "Errors related to blockchain networks",
+        "Actions carried out by third parties",
+        "Indirect damages resulting from the use of the platform"
+      ]
+    },
+    "s11": {
+      "number": "11",
+      "title": "Privacy Policy",
+      "paragraphs": [
+        "The collection, processing, and protection of personal data are governed by Liton Network's Privacy Policy."
+      ],
+      "important": "By using the platform, the user acknowledges having read this policy and agrees to it."
+    },
+    "s12": {
+      "number": "12",
+      "title": "Modification of Terms",
+      "paragraphs": [
+        "Liton Network may modify these Terms of Use at any time.",
+        "Updates will be published in the application or on the official website."
+      ],
+      "important": "Continued use of the service after modification constitutes acceptance of the new terms."
+    },
+    "s13": {
+      "number": "13",
+      "title": "Termination",
+      "paragraphs": ["The user may request the closure of their account at any time, subject to:"],
+      "listItems": [
+        "Legal obligations",
+        "Verification procedures",
+        "Any necessary security checks"
+      ]
+    },
+    "s14": {
+      "number": "14",
+      "title": "Applicable Law",
+      "paragraphs": [
+        "These Terms of Use are governed by the laws applicable in the country where the platform operates."
+      ],
+      "note": "Any dispute will fall under the jurisdiction of the competent courts."
+    },
+    "s15": {
+      "number": "15",
+      "title": "Contact",
+      "text": "For any questions regarding Liton Network:",
+      "email": "support{'@'}litonnetwork.com"
+    }
+  }
+}

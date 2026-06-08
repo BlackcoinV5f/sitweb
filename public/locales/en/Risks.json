@@ -1,1 +1,36 @@
-{}
+{
+  "title": "Risk Analysis",
+
+  "description": "Using the Blackcoin platform involves certain risks:",
+
+  "items": {
+
+    "regulatory": {
+      "title": "📜 Regulatory Risk",
+      "text": "Changes in legal frameworks"
+    },
+
+    "technology": {
+      "title": "💻 Technological Risk",
+      "text": "Bugs, security, maintenance"
+    },
+
+    "project": {
+      "title": "🔄 Project Evolution Risk",
+      "text": "Roadmap changes"
+    },
+
+    "adoption": {
+      "title": "👥 Adoption Risk",
+      "text": "Limited community adoption"
+    },
+
+    "listing": {
+      "title": "📊 Non-Listing Risk",
+      "text": "Absence of a secondary market"
+    }
+
+  },
+
+  "warning": "Users are encouraged to use the platform with full awareness of the associated risks."
+}

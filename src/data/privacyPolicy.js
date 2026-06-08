@@ -1,166 +1,163 @@
-export const privacyPolicyData = {
-  badge: 'Confidentialité & Sécurité',
-  title: 'Politique de Confidentialité',
-  date: '2 Juin 2026',
-  introText: 'Chez Liton Network, la protection de vos données personnelles est une priorité. Cette politique vous informe de la manière dont nous collectons, utilisons et protégeons vos informations.',
-  
-  sections: [
-    {
-      number: '01',
-      title: 'Données collectées',
-      intro: "Lors de l'utilisation de la plateforme, nous pouvons collecter les informations suivantes :",
-      type: 'dataGrid',
-      dataCards: [
-        {
-          icon: '📝',
-          title: "Informations d'inscription",
-          items: ['Nom et prénom', 'Adresse e-mail', 'Numéro de téléphone', 'Date de naissance']
-        },
-        {
-          icon: '🆔',
-          title: 'Vérification (KYC)',
-          items: ["Pièce d'identité", 'Selfie de vérification', 'Justificatifs réglementaires']
-        },
-        {
-          icon: '💻',
-          title: 'Informations techniques',
-          items: ['Adresse IP', "Type d'appareil", "Système d'exploitation", 'Navigateur utilisé', 'Journaux de connexion']
+// privacyPolicy.js
+// Utilise tm() pour les tableaux, t() pour les strings
+
+import { useI18n } from 'vue-i18n'
+import { computed } from 'vue'
+
+// Helper : convertit le résultat de tm() en vrai Array JS
+function toArray(val) {
+  if (Array.isArray(val)) return val
+  if (val && typeof val === 'object') return Object.values(val)
+  return []
+}
+
+export function usePrivacyPolicyData() {
+  const { t, tm } = useI18n()
+
+  const privacyPolicyData = computed(() => ({
+    badge:     t('PrivacyPolicy.badge'),
+    title:     t('PrivacyPolicy.title'),
+    date:      t('PrivacyPolicy.date'),
+    introText: t('PrivacyPolicy.introText'),
+
+    sections: [
+      // ── 01 ── Données collectées
+      {
+        number: t('PrivacyPolicy.sections.s01.number'),
+        title:  t('PrivacyPolicy.sections.s01.title'),
+        intro:  t('PrivacyPolicy.sections.s01.intro'),
+        type: 'dataGrid',
+        dataCards: [
+          {
+            icon:  '📝',
+            title: t('PrivacyPolicy.sections.s01.cards.inscription.title'),
+            items: toArray(tm('PrivacyPolicy.sections.s01.cards.inscription.items'))
+          },
+          {
+            icon:  '🆔',
+            title: t('PrivacyPolicy.sections.s01.cards.kyc.title'),
+            items: toArray(tm('PrivacyPolicy.sections.s01.cards.kyc.items'))
+          },
+          {
+            icon:  '💻',
+            title: t('PrivacyPolicy.sections.s01.cards.tech.title'),
+            items: toArray(tm('PrivacyPolicy.sections.s01.cards.tech.items'))
+          }
+        ]
+      },
+
+      // ── 02 ── Utilisation des données
+      {
+        number:     t('PrivacyPolicy.sections.s02.number'),
+        title:      t('PrivacyPolicy.sections.s02.title'),
+        intro:      t('PrivacyPolicy.sections.s02.intro'),
+        type:       'usageGrid',
+        usageItems: toArray(tm('PrivacyPolicy.sections.s02.usageItems'))
+      },
+
+      // ── 03 ── KYC
+      {
+        number:      t('PrivacyPolicy.sections.s03.number'),
+        title:       t('PrivacyPolicy.sections.s03.title'),
+        type:        'infoBox',
+        infoBoxType: 'info',
+        infoBoxIcon: '🔒',
+        content: {
+          paragraphs: toArray(tm('PrivacyPolicy.sections.s03.paragraphs')),
+          strongText: t('PrivacyPolicy.sections.s03.strongText'),
+          listItems:  toArray(tm('PrivacyPolicy.sections.s03.listItems'))
         }
-      ]
-    },
-    {
-      number: '02',
-      title: "Utilisation des données",
-      intro: 'Les données collectées sont utilisées exclusivement pour :',
-      type: 'usageGrid',
-      usageItems: [
-        'Créer et gérer les comptes utilisateurs',
-        'Fournir les services de Liton Network',
-        "Vérifier l'identité des utilisateurs",
-        'Prévenir les fraudes et abus',
-        'Assurer la sécurité de la plateforme',
-        'Respecter les obligations légales',
-        'Répondre aux demandes du support',
-        'Améliorer nos services'
-      ]
-    },
-    {
-      number: '03',
-      title: "Vérification d'identité (KYC)",
-      type: 'infoBox',
-      infoBoxType: 'info',
-      infoBoxIcon: '🔒',
-      content: {
-        paragraphs: [
-          "Dans certaines situations, Liton Network peut exiger une vérification d'identité."
-        ],
-        strongText: 'Les documents fournis sont utilisés uniquement pour :',
-        listItems: [
-          "Confirmer l'identité de l'utilisateur",
-          'Prévenir les activités frauduleuses',
-          'Respecter les obligations légales et réglementaires',
-          'Renforcer la sécurité de la plateforme'
-        ]
+      },
+
+      // ── 04 ── Conservation
+      {
+        number:        t('PrivacyPolicy.sections.s04.number'),
+        title:         t('PrivacyPolicy.sections.s04.title'),
+        intro:         t('PrivacyPolicy.sections.s04.intro'),
+        type:          'timeline',
+        timelineItems: toArray(tm('PrivacyPolicy.sections.s04.timelineItems')),
+        note:          t('PrivacyPolicy.sections.s04.note')
+      },
+
+      // ── 05 ── Partage
+      {
+        number:      t('PrivacyPolicy.sections.s05.number'),
+        title:       t('PrivacyPolicy.sections.s05.title'),
+        type:        'warningBox',
+        warningIcon: '🛡️',
+        content: {
+          strongText: t('PrivacyPolicy.sections.s05.strongText'),
+          paragraphs: toArray(tm('PrivacyPolicy.sections.s05.paragraphs')),
+          listItems:  toArray(tm('PrivacyPolicy.sections.s05.listItems'))
+        }
+      },
+
+      // ── 06 ── Sécurité
+      {
+        number:       t('PrivacyPolicy.sections.s06.number'),
+        title:        t('PrivacyPolicy.sections.s06.title'),
+        type:         'securityBox',
+        securityIcon: '🔐',
+        content: {
+          paragraphs: toArray(tm('PrivacyPolicy.sections.s06.paragraphs')),
+          badges:     toArray(tm('PrivacyPolicy.sections.s06.badges')),
+          note:       t('PrivacyPolicy.sections.s06.note')
+        }
+      },
+
+      // ── 07 ── Cookies
+      {
+        number: t('PrivacyPolicy.sections.s07.number'),
+        title:  t('PrivacyPolicy.sections.s07.title'),
+        type:   'cookiesBox',
+        content: {
+          paragraphs: toArray(tm('PrivacyPolicy.sections.s07.paragraphs')),
+          listItems:  toArray(tm('PrivacyPolicy.sections.s07.listItems')),
+          note:       t('PrivacyPolicy.sections.s07.note')
+        }
+      },
+
+      // ── 08 ── Droits
+      {
+        number: t('PrivacyPolicy.sections.s08.number'),
+        title:  t('PrivacyPolicy.sections.s08.title'),
+        type:   'rightsBox',
+        content: {
+          paragraphs:  toArray(tm('PrivacyPolicy.sections.s08.paragraphs')),
+          rightsCards: toArray(tm('PrivacyPolicy.sections.s08.rightsCards')),
+          note:        t('PrivacyPolicy.sections.s08.note')
+        }
+      },
+
+      // ── 09 ── Transferts
+      {
+        number: t('PrivacyPolicy.sections.s09.number'),
+        title:  t('PrivacyPolicy.sections.s09.title'),
+        type:   'transferBox',
+        content: {
+          paragraphs: toArray(tm('PrivacyPolicy.sections.s09.paragraphs'))
+        }
+      },
+
+      // ── 10 ── Modification
+      {
+        number: t('PrivacyPolicy.sections.s10.number'),
+        title:  t('PrivacyPolicy.sections.s10.title'),
+        type:   'modificationBox',
+        content: {
+          paragraphs: toArray(tm('PrivacyPolicy.sections.s10.paragraphs'))
+        }
+      },
+
+      // ── 11 ── Contact
+      {
+        number: t('PrivacyPolicy.sections.s11.number'),
+        title:  t('PrivacyPolicy.sections.s11.title'),
+        type:   'contact',
+        email:  'support@litonnetwork.com'
       }
-    },
-    {
-      number: '04',
-      title: 'Conservation des données',
-      intro: 'Les données personnelles sont conservées pendant la durée nécessaire à :',
-      type: 'timeline',
-      timelineItems: [
-        'La fourniture des services',
-        'Le respect des obligations légales',
-        'La résolution des litiges',
-        'La prévention des fraudes'
-      ],
-      note: 'Certaines informations peuvent être conservées après la fermeture du compte lorsque la loi l\'exige.'
-    },
-    {
-      number: '05',
-      title: 'Partage des données',
-      type: 'warningBox',
-      warningIcon: '🛡️',
-      content: {
-        strongText: 'Liton Network ne vend pas les données personnelles de ses utilisateurs.',
-        paragraphs: ['Les informations peuvent toutefois être partagées :'],
-        listItems: [
-          'Avec des prestataires techniques participant au fonctionnement de la plateforme',
-          'Avec des fournisseurs de services de vérification d\'identité',
-          'Avec les autorités compétentes lorsque la loi l\'exige',
-          'Pour protéger les droits, la sécurité ou l\'intégrité de Liton Network'
-        ]
-      }
-    },
-    {
-      number: '06',
-      title: 'Sécurité des données',
-      type: 'securityBox',
-      securityIcon: '🔐',
-      content: {
-        paragraphs: ['Nous mettons en œuvre des mesures de sécurité raisonnables afin de protéger les données personnelles contre :'],
-        badges: ['❌ Accès non autorisé', '📢 Divulgation', '✏️ Modification', '🗑️ Destruction ou perte'],
-        note: 'Toutefois, aucun système informatique ne peut garantir une sécurité absolue.'
-      }
-    },
-    {
-      number: '07',
-      title: 'Cookies et technologies similaires',
-      type: 'cookiesBox',
-      content: {
-        paragraphs: ['🍪 La plateforme peut utiliser des cookies ou technologies similaires afin de :'],
-        listItems: [
-          'Maintenir les sessions utilisateur',
-          "Améliorer l'expérience utilisateur",
-          'Analyser les performances de la plateforme',
-          'Renforcer la sécurité'
-        ],
-        note: "L'utilisateur peut gérer certains cookies via les paramètres de son navigateur lorsque cela est applicable."
-      }
-    },
-    {
-      number: '08',
-      title: "Droits des utilisateurs",
-      type: 'rightsBox',
-      content: {
-        paragraphs: ["Sous réserve des lois applicables, l'utilisateur peut demander :"],
-        rightsCards: [
-          { emoji: '👁️', text: 'Accès aux données' },
-          { emoji: '✏️', text: 'Correction des données' },
-          { emoji: '🗑️', text: 'Suppression des données' },
-          { emoji: '⏸️', text: 'Limitation du traitement' },
-          { emoji: '📋', text: 'Portabilité des données' }
-        ],
-        note: 'Certaines demandes peuvent être refusées lorsque la loi impose la conservation des informations.'
-      }
-    },
-    {
-      number: '09',
-      title: 'Transferts internationaux',
-      type: 'transferBox',
-      content: {
-        paragraphs: [
-          '🌍 Les données peuvent être stockées ou traitées dans différents pays selon les fournisseurs techniques utilisés par Liton Network.',
-          'Nous prenons des mesures raisonnables pour assurer un niveau de protection approprié des données personnelles.'
-        ]
-      }
-    },
-    {
-      number: '10',
-      title: 'Modification de la politique',
-      type: 'modificationBox',
-      content: {
-        paragraphs: [
-          '📢 Liton Network peut modifier la présente Politique de Confidentialité à tout moment.',
-          'Toute modification importante sera publiée sur la plateforme ou communiquée aux utilisateurs par un moyen approprié.'
-        ]
-      }
-    },
-    {
-      number: '11',
-      title: 'Contact',
-      type: 'contact',
-      email: 'support@litonnetwork.com'
-    }
-  ]
+    ]
+  }))
+
+  return { privacyPolicyData }
 }

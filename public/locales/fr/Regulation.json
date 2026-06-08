@@ -1,1 +1,28 @@
-{}
+{
+  "title": "Cadre réglementaire et conformité",
+
+  "description": "Blackcoin s'inscrit dans une démarche de conformité progressive :",
+
+  "items": {
+
+    "utility": {
+      "title": "Éviter toute qualification en produit financier",
+      "text": "Approche utilitaire claire"
+    },
+
+    "separation": {
+      "title": "Séparation usage / participation / token",
+      "text": "Distinction nette entre les composantes"
+    },
+
+    "transparency": {
+      "title": "Information transparente",
+      "text": "Communication claire et régulière"
+    }
+
+  },
+
+  "legalLabel": "Note légale :",
+
+  "legalNote": "Les utilisateurs sont responsables de vérifier la conformité de leur utilisation avec les lois en vigueur dans leur juridiction. La plateforme Blackcoin n'est pas accessible aux résidents de certaines juridictions restrictives."
+}

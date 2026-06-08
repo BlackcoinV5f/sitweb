@@ -133,31 +133,16 @@
   </div>
 </template>
 
-<script>
+<script setup>
+import { usePrivacyPolicyData } from '@/data/privacyPolicy.js'
 import LegalHeader from '@/components/legal/LegalHeader.vue'
 import LegalSection from '@/components/legal/LegalSection.vue'
 import DataCard from '@/components/legal/DataCard.vue'
 import UsageItem from '@/components/legal/UsageItem.vue'
 import InfoBox from '@/components/legal/InfoBox.vue'
 import ContactBox from '@/components/legal/ContactBox.vue'
-import { privacyPolicyData } from '@/data/privacyPolicy.js'
 
-export default {
-  name: 'PrivacyPolicy',
-  components: {
-    LegalHeader,
-    LegalSection,
-    DataCard,
-    UsageItem,
-    InfoBox,
-    ContactBox
-  },
-  data() {
-    return {
-      privacyPolicyData
-    }
-  }
-}
+const { privacyPolicyData } = usePrivacyPolicyData()
 </script>
 
 <style scoped>

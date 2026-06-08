@@ -1,1 +1,24 @@
-{}
+{
+  "title": "Conclusion",
+
+  "paragraph1": {
+
+    "start": "Liton ltn_network is a project focused on ",
+
+    "highlight": "usage, education, and accessibility",
+
+    "end": " of digital financial services. The LTN token is a functional tool supporting this vision, not an end in itself."
+  },
+
+  "paragraph2": "The success of the project relies on service adoption, user experience quality, and the progressive evolution of the ecosystem while respecting applicable regulatory frameworks.",
+
+  "cta": {
+
+    "title": "🚀 Ready to explore Liton Network?",
+
+    "communityButton": "Join the community",
+
+    "platformButton": "Access the platform"
+
+  }
+}

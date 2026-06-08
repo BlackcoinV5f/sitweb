@@ -1,1 +1,31 @@
-{}
+{
+  "title": "Distribution et gestion du token",
+
+  "description": "La distribution du token LTN est conçue pour assurer le bon fonctionnement de l'écosystème :",
+
+  "items": {
+
+    "internal": {
+      "title": "🔄 Utilisation interne",
+      "text": "Fonctionnalités de la plateforme"
+    },
+
+    "development": {
+      "title": "🚀 Développement",
+      "text": "Évolution de la plateforme"
+    },
+
+    "operations": {
+      "title": "⚙️ Opérations techniques",
+      "text": "Maintenance et infrastructure"
+    },
+
+    "community": {
+      "title": "👥 Animation communautaire",
+      "text": "Engagement et récompenses"
+    }
+
+  },
+
+  "note": "La détention du token ne constitue pas une participation au capital, ni un droit de gouvernance financière."
+}

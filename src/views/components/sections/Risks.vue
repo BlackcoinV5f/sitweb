@@ -1,42 +1,98 @@
 <template>
   <section id="risques">
-    <h2><span class="section-number">10.</span> Analyse des risques</h2>
-    <p>L'utilisation de la plateforme Blackcoin comporte des risques :</p>
+
+    <h2>
+      <span class="section-number">10.</span>
+      {{ $t('Risks.title') }}
+    </h2>
+
+    <p>
+      {{ $t('Risks.description') }}
+    </p>
+
     <div class="risks-grid">
+
       <div class="risk-card">
-        <h4>📜 Risque réglementaire</h4>
-        <p>Évolution des cadres légaux</p>
+
+        <h4>
+          {{ $t('Risks.items.regulatory.title') }}
+        </h4>
+
+        <p>
+          {{ $t('Risks.items.regulatory.text') }}
+        </p>
+
       </div>
+
       <div class="risk-card">
-        <h4>💻 Risque technologique</h4>
-        <p>Bugs, sécurité, maintenance</p>
+
+        <h4>
+          {{ $t('Risks.items.technology.title') }}
+        </h4>
+
+        <p>
+          {{ $t('Risks.items.technology.text') }}
+        </p>
+
       </div>
+
       <div class="risk-card">
-        <h4>🔄 Risque d'évolution du projet</h4>
-        <p>Changements de roadmap</p>
+
+        <h4>
+          {{ $t('Risks.items.project.title') }}
+        </h4>
+
+        <p>
+          {{ $t('Risks.items.project.text') }}
+        </p>
+
       </div>
+
       <div class="risk-card">
-        <h4>👥 Risque de non-adoption</h4>
-        <p>Adoption limitée par la communauté</p>
+
+        <h4>
+          {{ $t('Risks.items.adoption.title') }}
+        </h4>
+
+        <p>
+          {{ $t('Risks.items.adoption.text') }}
+        </p>
+
       </div>
+
       <div class="risk-card">
-        <h4>📊 Risque de non-cotation</h4>
-        <p>Absence de marché secondaire</p>
+
+        <h4>
+          {{ $t('Risks.items.listing.title') }}
+        </h4>
+
+        <p>
+          {{ $t('Risks.items.listing.text') }}
+        </p>
+
       </div>
+
     </div>
+
     <div class="warning-banner">
-      <strong>Les utilisateurs sont invités à utiliser la plateforme en connaissance de cause.</strong>
+
+      <strong>
+        {{ $t('Risks.warning') }}
+      </strong>
+
     </div>
+
   </section>
 </template>
 
 <script>
 export default {
-  name: 'Risks'
-}
+  name: "Risks"
+};
 </script>
 
 <style scoped>
+
 section {
   margin-bottom: 60px;
   scroll-margin-top: 20px;
@@ -72,7 +128,7 @@ h2 {
 }
 
 h4 {
-  color: #fff;
+  color: #ffffff;
   margin-bottom: 8px;
 }
 
@@ -85,14 +141,19 @@ h4 {
 }
 
 @media (max-width: 768px) {
+
   .risks-grid {
     grid-template-columns: 1fr;
   }
+
 }
 
 @media (max-width: 480px) {
+
   h2 {
     font-size: 1.5rem;
   }
+
 }
+
 </style>

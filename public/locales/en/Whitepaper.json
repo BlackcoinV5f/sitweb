@@ -1,1 +1,40 @@
-{}
+{
+  "header": {
+    "title": "Liton Network (LTN) WHITE PAPER",
+    "subtitle": "Platform for education and access to digital financial services",
+    "warning": "Informational document",
+    "warningText": "The LTN token is a utility tool, does not constitute an investment product, and guarantees no returns."
+  },
+  "footer": {
+    "disclaimerLabel": "Informational document",
+    "disclaimerVersion": "Version 1.0 — Last updated: March 2024",
+    "disclaimerText": "This document does not constitute a financial offer, investment advice, or a solicitation to buy. Please consult our Terms of Use for more information.",
+    "links": {
+      "terms": "Terms & Conditions",
+      "privacy": "Privacy Policy",
+      "contact": "Contact"
+    },
+    "social": {
+      "telegramBot": "Telegram Bot",
+      "telegramCommunity": "Telegram Community",
+      "facebook": "Facebook",
+      "twitter": "X",
+      "instagram": "Instagram",
+      "youtube": "YouTube",
+      "tiktok": "TikTok"
+    }
+  },
+  "sections": [
+    { "id": "introduction", "title": "Introduction" },
+    { "id": "vision", "title": "Vision & Objectives" },
+    { "id": "ecosysteme", "title": "Ecosystem" },
+    { "id": "minage", "title": "Mining Phase" },
+    { "id": "progression", "title": "Progression & Services" },
+    { "id": "token", "title": "LTN Token" },
+    { "id": "distribution", "title": "Distribution" },
+    { "id": "cotation", "title": "Listing" },
+    { "id": "reglementation", "title": "Regulation" },
+    { "id": "risques", "title": "Risk Analysis" },
+    { "id": "conclusion", "title": "Conclusion" }
+  ]
+}

@@ -1,1 +1,31 @@
-{}
+{
+  "sectionTitle": "Phase de participation et de minage",
+  "sectionNumber": "4.",
+
+  "s41": {
+    "title": "4.1 Principe général",
+    "intro": "La plateforme Blackcoin introduit une phase de participation communautaire, communément appelée « phase de minage ». Cette phase a pour objectif principal de :",
+    "listItems": [
+      "<strong>Encourager l'engagement</strong> des utilisateurs",
+      "<strong>Tester et améliorer</strong> la plateforme",
+      "<strong>Structurer</strong> une communauté active autour des services Blackcoin"
+    ],
+    "note": "La phase de minage est <strong>limitée dans le temps</strong> et s'étend sur quelques mois."
+  },
+
+  "s42": {
+    "title": "4.2 Nature de la participation",
+    "intro": "La participation repose sur des actions non spéculatives :",
+    "cards": [
+      { "icon": "💻", "text": "Utilisation de la plateforme" },
+      { "icon": "📚", "text": "Activités éducatives" },
+      { "icon": "🔄", "text": "Interaction avec les fonctionnalités" },
+      { "icon": "📈", "text": "Progression dans des parcours" }
+    ]
+  },
+
+  "disclaimer": {
+    "title": "⚠️ IMPORTANT",
+    "text": "Cette phase ne constitue <strong>ni un investissement, ni une promesse de rendement futur</strong>, et ne garantit aucun avantage économique. Aucune contribution financière n'est requise."
+  }
+}

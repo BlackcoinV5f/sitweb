@@ -1,1 +1,19 @@
-{}
+{
+  "title": "Cotation et plateformes d'échange",
+
+  "descriptionStart": "L'équipe Liton Network pourra, le moment venu, étudier les possibilités d'intégration du token LTN sur des plateformes d'échange compatibles.",
+
+  "descriptionStrong": "Toutefois :",
+
+  "items": {
+
+    "listing": "❌ Aucune cotation n'est garantie",
+
+    "liquidity": "❌ Aucune liquidité n'est promise",
+
+    "timeline": "❌ Aucune échéance temporelle n'est contractuelle"
+
+  },
+
+  "footer": "Les décisions relatives à une éventuelle cotation dépendront de facteurs techniques, réglementaires et stratégiques."
+}

@@ -1,1 +1,31 @@
-{}
+{
+  "sectionTitle": "Participation and Mining Phase",
+  "sectionNumber": "4.",
+
+  "s41": {
+    "title": "4.1 General Principle",
+    "intro": "The Blackcoin platform introduces a community participation phase, commonly referred to as the \"mining phase\". The main objectives of this phase are to:",
+    "listItems": [
+      "<strong>Encourage engagement</strong> from users",
+      "<strong>Test and improve</strong> the platform",
+      "<strong>Build</strong> an active community around Blackcoin services"
+    ],
+    "note": "The mining phase is <strong>time-limited</strong> and spans a few months."
+  },
+
+  "s42": {
+    "title": "4.2 Nature of Participation",
+    "intro": "Participation is based on non-speculative actions:",
+    "cards": [
+      { "icon": "💻", "text": "Using the platform" },
+      { "icon": "📚", "text": "Educational activities" },
+      { "icon": "🔄", "text": "Interacting with features" },
+      { "icon": "📈", "text": "Progressing through learning paths" }
+    ]
+  },
+
+  "disclaimer": {
+    "title": "⚠️ IMPORTANT",
+    "text": "This phase does <strong>not constitute an investment or a promise of future returns</strong>, and does not guarantee any economic benefit. No financial contribution is required."
+  }
+}

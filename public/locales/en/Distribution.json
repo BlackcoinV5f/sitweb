@@ -1,1 +1,31 @@
-{}
+{
+  "title": "Token Distribution and Management",
+
+  "description": "The distribution of the LTN token is designed to ensure the proper functioning of the ecosystem:",
+
+  "items": {
+
+    "internal": {
+      "title": "🔄 Internal Usage",
+      "text": "Platform functionalities"
+    },
+
+    "development": {
+      "title": "🚀 Development",
+      "text": "Platform evolution"
+    },
+
+    "operations": {
+      "title": "⚙️ Technical Operations",
+      "text": "Maintenance and infrastructure"
+    },
+
+    "community": {
+      "title": "👥 Community Engagement",
+      "text": "Engagement and rewards"
+    }
+
+  },
+
+  "note": "Holding the token does not constitute equity ownership or financial governance rights."
+}

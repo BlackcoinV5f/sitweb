@@ -1,34 +1,62 @@
 <template>
   <section id="conclusion">
-    <h2><span class="section-number">11.</span> Conclusion</h2>
+
+    <h2>
+      <span class="section-number">11.</span>
+      {{ $t('Conclusion.title') }}
+    </h2>
+
     <div class="conclusion-content">
+
       <p>
-        Blackcoin est un projet orienté vers <strong>l'usage, l'éducation et l'accessibilité</strong> 
-        des services financiers numériques. Le token LTN est un outil fonctionnel au service de cette 
-        vision, et non une finalité en soi.
+
+        {{ $t('Conclusion.paragraph1.start') }}
+
+        <strong>
+          {{ $t('Conclusion.paragraph1.highlight') }}
+        </strong>
+
+        {{ $t('Conclusion.paragraph1.end') }}
+
       </p>
+
       <p>
-        La réussite du projet repose sur l'adoption des services, la qualité de l'expérience utilisateur 
-        et l'évolution progressive de l'écosystème, dans le respect des cadres réglementaires applicables.
+        {{ $t('Conclusion.paragraph2') }}
       </p>
+
     </div>
+
     <div class="call-to-action">
-      <h3>🚀 Prêt à explorer Blackcoin ?</h3>
+
+      <h3>
+        {{ $t('Conclusion.cta.title') }}
+      </h3>
+
       <div class="cta-buttons">
-        <button class="cta-btn primary">Rejoindre la communauté</button>
-        <button class="cta-btn secondary">Accéder à la plateforme</button>
+
+        <button class="cta-btn primary">
+          {{ $t('Conclusion.cta.communityButton') }}
+        </button>
+
+        <button class="cta-btn secondary">
+          {{ $t('Conclusion.cta.platformButton') }}
+        </button>
+
       </div>
+
     </div>
+
   </section>
 </template>
 
 <script>
 export default {
-  name: 'Conclusion'
-}
+  name: "Conclusion"
+};
 </script>
 
 <style scoped>
+
 section {
   margin-bottom: 60px;
   scroll-margin-top: 20px;
@@ -64,7 +92,7 @@ h2 {
 h3 {
   margin-top: 0;
   margin-bottom: 15px;
-  color: #ddd;
+  color: #dddddd;
   font-size: 1.3rem;
 }
 
@@ -101,14 +129,19 @@ h3 {
 }
 
 @media (max-width: 768px) {
+
   .cta-buttons {
     flex-direction: column;
   }
+
 }
 
 @media (max-width: 480px) {
+
   h2 {
     font-size: 1.5rem;
   }
+
 }
+
 </style>

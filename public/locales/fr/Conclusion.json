@@ -1,1 +1,24 @@
-{}
+{
+  "title": "Conclusion",
+
+  "paragraph1": {
+
+    "start": "Liton ltn_network est un projet orienté vers ",
+
+    "highlight": "l'usage, l'éducation et l'accessibilité",
+
+    "end": " des services financiers numériques. Le token LTN est un outil fonctionnel au service de cette vision, et non une finalité en soi."
+  },
+
+  "paragraph2": "La réussite du projet repose sur l'adoption des services, la qualité de l'expérience utilisateur et l'évolution progressive de l'écosystème, dans le respect des cadres réglementaires applicables.",
+
+  "cta": {
+
+    "title": "🚀 Prêt à explorer Blackcoin ?",
+
+    "communityButton": "Rejoindre la communauté",
+
+    "platformButton": "Accéder à la plateforme"
+
+  }
+}

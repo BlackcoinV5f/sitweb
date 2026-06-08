@@ -4,7 +4,7 @@
     <h1>{{ title }}</h1>
     <p class="date">
       <span class="date-icon">📅</span>
-      Dernière mise à jour : <strong>{{ date }}</strong>
+      {{ $t('PrivacyPolicy.lastUpdated') }} <strong>{{ date }}</strong>
     </p>
     <div class="header-decoration"></div>
   </div>
@@ -16,7 +16,7 @@ export default {
   props: {
     badge: {
       type: String,
-      default: 'Confidentialité & Sécurité'
+      default: ''
     },
     title: {
       type: String,

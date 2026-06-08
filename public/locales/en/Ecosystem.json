@@ -1,1 +1,23 @@
-{}
+{
+  "sectionNumber": "3.",
+  "title": "Presentation of the Liton Network Ecosystem",
+  "intro": "The Liton Network ecosystem is built on three complementary pillars:",
+  "pillars": [
+    {
+      "icon": "👥",
+      "title": "Community Participation",
+      "description": "Activity, engagement, progression"
+    },
+    {
+      "icon": "🛠️",
+      "title": "Digital Services",
+      "description": "Education, tools, access"
+    },
+    {
+      "icon": "🪙",
+      "title": "LTN Token",
+      "description": "Internal functional tool"
+    }
+  ],
+  "note": "These three components are intentionally distinct to avoid any confusion between participation, use of services, and token holdings."
+}

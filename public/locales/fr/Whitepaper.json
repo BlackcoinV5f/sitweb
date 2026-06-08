@@ -1,1 +1,40 @@
-{}
+{
+  "header": {
+    "title": "LIVRE BLANC BLACKCOIN (LTN)",
+    "subtitle": "Plateforme d'éducation et d'accès aux services financiers numériques",
+    "warning": "Document informatif",
+    "warningText": "Le token LTN est un outil utilitaire, ne constitue pas un produit d'investissement et ne garantit aucun rendement."
+  },
+  "footer": {
+    "disclaimerLabel": "Document informatif",
+    "disclaimerVersion": "Version 1.0 — Dernière mise à jour : Mars 2024",
+    "disclaimerText": "Ce document ne constitue pas une offre financière, un conseil en investissement ou une sollicitation d'achat. Consultez nos CGU pour plus d'informations.",
+    "links": {
+      "terms": "Conditions Générales",
+      "privacy": "Politique de confidentialité",
+      "contact": "Contact"
+    },
+    "social": {
+      "telegramBot": "Bot Telegram",
+      "telegramCommunity": "Communauté Telegram",
+      "facebook": "Facebook",
+      "twitter": "X",
+      "instagram": "Instagram",
+      "youtube": "YouTube",
+      "tiktok": "TikTok"
+    }
+  },
+  "sections": [
+    { "id": "introduction", "title": "Introduction" },
+    { "id": "vision", "title": "Vision et objectifs" },
+    { "id": "ecosysteme", "title": "Écosystème" },
+    { "id": "minage", "title": "Phase de minage" },
+    { "id": "progression", "title": "Progression et services" },
+    { "id": "token", "title": "Token LTN" },
+    { "id": "distribution", "title": "Distribution" },
+    { "id": "cotation", "title": "Cotation" },
+    { "id": "reglementation", "title": "Réglementation" },
+    { "id": "risques", "title": "Analyse des risques" },
+    { "id": "conclusion", "title": "Conclusion" }
+  ]
+}

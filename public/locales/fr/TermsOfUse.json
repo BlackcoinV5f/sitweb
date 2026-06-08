@@ -1,0 +1,219 @@
+{
+  "header": {
+    "badge": "Document légal",
+    "title": "Conditions d'Utilisation",
+    "date": "2 Juin 2026"
+  },
+  "intro": {
+    "title": "Liton Network",
+    "description": "Les présentes Conditions d'Utilisation régissent l'accès et l'utilisation de la plateforme Liton Network ainsi que des services proposés.",
+    "highlight": "En créant un compte ou en utilisant l'application, vous acceptez pleinement les présentes conditions."
+  },
+  "sections": {
+    "s01": {
+      "number": "01",
+      "title": "Objet du service",
+      "paragraphs": ["Liton Network propose une plateforme numérique permettant notamment :"],
+      "listItems": [
+        "La création de comptes utilisateurs",
+        "L'utilisation d'un portefeuille interne",
+        "Le dépôt de fonds numériques",
+        "L'accès à des fonctionnalités liées aux actifs numériques et aux services proposés sur la plateforme"
+      ],
+      "note": "La plateforme peut évoluer à tout moment avec l'ajout, la modification ou la suppression de certaines fonctionnalités."
+    },
+    "s02": {
+      "number": "02",
+      "title": "Conditions d'inscription",
+      "paragraphs": ["Pour utiliser la plateforme, l'utilisateur doit :"],
+      "listItems": [
+        "Fournir des informations exactes et à jour",
+        "Être légalement autorisé à utiliser ce type de service selon les lois de son pays",
+        "Sécuriser ses identifiants de connexion"
+      ],
+      "important": "L'utilisateur est responsable de toutes les activités réalisées depuis son compte."
+    },
+    "s03": {
+      "number": "03",
+      "title": "Vérification d'identité (KYC)",
+      "paragraphs": [
+        "Liton Network peut exiger une procédure de vérification d'identité (KYC) avant l'accès à certaines fonctionnalités.",
+        "L'utilisateur accepte de fournir les documents demandés afin de :"
+      ],
+      "listItems": [
+        "Confirmer son identité",
+        "Prévenir les fraudes",
+        "Empêcher les doubles comptes",
+        "Respecter les obligations légales et réglementaires applicables"
+      ],
+      "warning": {
+        "title": "Tout refus de vérification peut entraîner :",
+        "items": [
+          "La limitation du compte",
+          "La suspension du compte",
+          "La fermeture définitive du compte"
+        ]
+      }
+    },
+    "s04": {
+      "number": "04",
+      "title": "Portefeuille interne et dépôts",
+      "paragraphs": [
+        "Liton Network utilise un système de portefeuille interne.",
+        "Lorsqu'un utilisateur effectue un dépôt :"
+      ],
+      "listItems": [
+        "Une adresse de dépôt peut être générée",
+        "Les fonds sont vérifiés avant crédit",
+        "Le montant correspondant est ensuite ajouté au portefeuille interne de l'utilisateur"
+      ],
+      "infoBox": {
+        "title": "Liton Network ne demande jamais :",
+        "items": [
+          "Les clés privées des utilisateurs",
+          "Les phrases de récupération (seed phrase)",
+          "L'accès à des portefeuilles personnels externes"
+        ]
+      },
+      "warningBox": {
+        "title": "L'utilisateur est seul responsable :",
+        "items": [
+          "De l'exactitude des informations de dépôt",
+          "De l'envoi des fonds à la bonne adresse",
+          "Du choix du réseau de transfert approprié"
+        ]
+      },
+      "note": "La plateforme ne pourra être tenue responsable des pertes résultant d'une erreur de l'utilisateur, d'un mauvais réseau blockchain, d'un envoi vers une adresse incorrecte ou d'une erreur provenant d'un service tiers."
+    },
+    "s05": {
+      "number": "05",
+      "title": "Interdictions",
+      "paragraphs": ["Il est strictement interdit :"],
+      "dangerList": [
+        "De créer plusieurs comptes frauduleux",
+        "D'utiliser de fausses informations",
+        "D'usurper l'identité d'une autre personne",
+        "D'utiliser la plateforme pour des activités illégales",
+        "De tenter de contourner les systèmes de sécurité",
+        "D'exploiter des bugs ou failles techniques",
+        "De manipuler les systèmes de récompense, d'investissement ou de parrainage"
+      ],
+      "warning": {
+        "title": "Toute violation peut entraîner :",
+        "items": [
+          "La suspension immédiate du compte",
+          "Le blocage temporaire ou définitif des fonds lorsque la loi l'autorise",
+          "Un signalement aux autorités compétentes"
+        ]
+      }
+    },
+    "s06": {
+      "number": "06",
+      "title": "Sécurité du compte",
+      "paragraphs": ["L'utilisateur est responsable de la confidentialité :"],
+      "listItems": [
+        "De son mot de passe",
+        "De ses codes de sécurité",
+        "De ses informations de connexion"
+      ],
+      "important": "En cas d'accès non autorisé suspecté, l'utilisateur doit contacter immédiatement le support de Liton Network."
+    },
+    "s07": {
+      "number": "07",
+      "title": "Risques financiers",
+      "paragraphs": [
+        "Les actifs numériques et services liés aux investissements comportent des risques importants.",
+        "L'utilisateur reconnaît que :"
+      ],
+      "listItems": [
+        "Les valeurs peuvent fluctuer fortement",
+        "Des pertes financières peuvent survenir",
+        "Aucun revenu ou profit n'est garanti"
+      ],
+      "warningBox": {
+        "title": "Liton Network ne fournit aucun conseil financier, fiscal ou juridique personnalisé.",
+        "note": "Chaque utilisateur reste seul responsable de ses décisions financières."
+      }
+    },
+    "s08": {
+      "number": "08",
+      "title": "Suspension ou fermeture de compte",
+      "paragraphs": ["Liton Network se réserve le droit de suspendre ou fermer un compte en cas :"],
+      "listItems": [
+        "De fraude suspectée",
+        "De non-respect des présentes conditions",
+        "D'activité illégale",
+        "De risque pour la sécurité de la plateforme"
+      ],
+      "note": "Certaines vérifications peuvent être exigées avant tout retrait ou toute réactivation du compte."
+    },
+    "s09": {
+      "number": "09",
+      "title": "Disponibilité du service",
+      "paragraphs": [
+        "Nous faisons notre possible pour assurer la disponibilité continue de la plateforme.",
+        "Toutefois, Liton Network ne garantit pas :"
+      ],
+      "listItems": [
+        "L'absence d'interruptions",
+        "L'absence d'erreurs techniques",
+        "La disponibilité permanente des services"
+      ],
+      "note": "Des opérations de maintenance ou des incidents techniques peuvent temporairement affecter l'accès à l'application."
+    },
+    "s10": {
+      "number": "10",
+      "title": "Limitation de responsabilité",
+      "paragraphs": ["Dans les limites autorisées par la loi, Liton Network ne pourra être tenue responsable :"],
+      "listItems": [
+        "Des pertes financières",
+        "Des pertes de données",
+        "Des interruptions de service",
+        "Des erreurs liées aux réseaux blockchain",
+        "Des actions réalisées par des tiers",
+        "Des dommages indirects résultant de l'utilisation de la plateforme"
+      ]
+    },
+    "s11": {
+      "number": "11",
+      "title": "Politique de confidentialité",
+      "paragraphs": [
+        "La collecte, le traitement et la protection des données personnelles sont régis par la Politique de Confidentialité de Liton Network."
+      ],
+      "important": "En utilisant la plateforme, l'utilisateur reconnaît avoir pris connaissance de cette politique et l'accepter."
+    },
+    "s12": {
+      "number": "12",
+      "title": "Modification des conditions",
+      "paragraphs": [
+        "Liton Network peut modifier les présentes Conditions d'Utilisation à tout moment.",
+        "Les mises à jour seront publiées dans l'application ou sur le site officiel."
+      ],
+      "important": "L'utilisation continue du service après modification vaut acceptation des nouvelles conditions."
+    },
+    "s13": {
+      "number": "13",
+      "title": "Résiliation",
+      "paragraphs": ["L'utilisateur peut demander la fermeture de son compte à tout moment, sous réserve :"],
+      "listItems": [
+        "Des obligations légales",
+        "Des procédures de vérification",
+        "Des contrôles de sécurité éventuellement nécessaires"
+      ]
+    },
+    "s14": {
+      "number": "14",
+      "title": "Droit applicable",
+      "paragraphs": [
+        "Les présentes Conditions d'Utilisation sont régies par les lois applicables dans le pays d'exploitation de la plateforme."
+      ],
+      "note": "Tout litige relèvera des juridictions compétentes."
+    },
+    "s15": {
+      "number": "15",
+      "title": "Contact",
+      "text": "Pour toute question concernant Liton Network :",
+      "email": "support{'@'}litonnetwork.com"
+    }
+  }
+}

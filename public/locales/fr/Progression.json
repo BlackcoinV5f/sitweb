@@ -1,1 +1,39 @@
-{}
+{
+  "sectionNumber": "5.",
+  "sectionTitle": "Progression, gamification et services premium",
+
+  "s51": {
+    "title": "5.1 Parcours de progression",
+    "intro": "Blackcoin intègre un système de progression visant à améliorer l'expérience utilisateur :",
+    "listItems": [
+      "🎮 <strong>Niveaux</strong> - Évolution selon l'activité",
+      "🧭 <strong>Parcours thématiques</strong> - Apprentissage structuré",
+      "🎯 <strong>Objectifs pédagogiques</strong> - Défis éducatifs",
+      "🪙 <strong>Points internes</strong> - Récompenses non monétaires"
+    ],
+    "note": "La progression est conçue comme un <strong>outil d'accompagnement</strong>, non comme un mécanisme d'accumulation de valeur."
+  },
+
+  "s52": {
+    "title": "5.2 Services premium",
+    "intro": "Certains services sont accessibles via des offres premium facultatives :",
+    "cards": [
+      "🎓 Contenus éducatifs avancés",
+      "🔧 Outils supplémentaires",
+      "📊 Tableaux de bord enrichis",
+      "⚡ Fonctionnalités expérimentales"
+    ]
+  },
+
+  "s53": {
+    "title": "5.3 Points internes",
+    "intro": "Les points internes :",
+    "listItems": [
+      "❌ <strong>N'ont aucune valeur monétaire</strong>",
+      "❌ <strong>Ne sont pas échangeables</strong>",
+      "❌ <strong>Ne sont pas convertibles</strong> en actifs numériques",
+      "✅ <strong>Servent uniquement</strong> à l'utilisation interne de la plateforme"
+    ],
+    "note": "Ils sont conçus comme un mécanisme d'usage et de consommation, non comme un stock de valeur."
+  }
+}

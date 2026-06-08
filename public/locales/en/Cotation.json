@@ -1,1 +1,19 @@
-{}
+{
+  "title": "Listing and Exchange Platforms",
+
+  "descriptionStart": "The Liton Network team may, when appropriate, explore opportunities to integrate the LTN token on compatible exchange platforms.",
+
+  "descriptionStrong": "However:",
+
+  "items": {
+
+    "listing": "❌ No listing is guaranteed",
+
+    "liquidity": "❌ No liquidity is promised",
+
+    "timeline": "❌ No timeline is contractually guaranteed"
+
+  },
+
+  "footer": "Any decision regarding a potential listing will depend on technical, regulatory, and strategic factors."
+}

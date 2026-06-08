@@ -1,38 +1,76 @@
 <template>
   <section id="distribution">
-    <h2><span class="section-number">7.</span> Distribution et gestion du token</h2>
-    <p>La distribution du token LTN est conçue pour assurer le bon fonctionnement de l'écosystème :</p>
+
+    <h2>
+      <span class="section-number">7.</span>
+      {{ $t('Distribution.title') }}
+    </h2>
+
+    <p>
+      {{ $t('Distribution.description') }}
+    </p>
+
     <div class="distribution-grid">
+
       <div class="dist-item">
-        <h4>🔄 Utilisation interne</h4>
-        <p>Fonctionnalités de la plateforme</p>
+        <h4>
+          {{ $t('Distribution.items.internal.title') }}
+        </h4>
+
+        <p>
+          {{ $t('Distribution.items.internal.text') }}
+        </p>
       </div>
+
       <div class="dist-item">
-        <h4>🚀 Développement</h4>
-        <p>Évolution de la plateforme</p>
+        <h4>
+          {{ $t('Distribution.items.development.title') }}
+        </h4>
+
+        <p>
+          {{ $t('Distribution.items.development.text') }}
+        </p>
       </div>
+
       <div class="dist-item">
-        <h4>⚙️ Opérations techniques</h4>
-        <p>Maintenance et infrastructure</p>
+        <h4>
+          {{ $t('Distribution.items.operations.title') }}
+        </h4>
+
+        <p>
+          {{ $t('Distribution.items.operations.text') }}
+        </p>
       </div>
+
       <div class="dist-item">
-        <h4>👥 Animation communautaire</h4>
-        <p>Engagement et récompenses</p>
+        <h4>
+          {{ $t('Distribution.items.community.title') }}
+        </h4>
+
+        <p>
+          {{ $t('Distribution.items.community.text') }}
+        </p>
       </div>
+
     </div>
+
     <div class="note-box">
-      <p>La détention du token ne constitue pas une participation au capital, ni un droit de gouvernance financière.</p>
+      <p>
+        {{ $t('Distribution.note') }}
+      </p>
     </div>
+
   </section>
 </template>
 
 <script>
 export default {
-  name: 'Distribution'
-}
+  name: "Distribution"
+};
 </script>
 
 <style scoped>
+
 section {
   margin-bottom: 60px;
   scroll-margin-top: 20px;
@@ -66,7 +104,7 @@ h2 {
 }
 
 h4 {
-  color: #fff;
+  color: #ffffff;
   margin-bottom: 8px;
 }
 
@@ -79,14 +117,19 @@ h4 {
 }
 
 @media (max-width: 768px) {
+
   .distribution-grid {
     grid-template-columns: 1fr;
   }
+
 }
 
 @media (max-width: 480px) {
+
   h2 {
     font-size: 1.5rem;
   }
+
 }
+
 </style>

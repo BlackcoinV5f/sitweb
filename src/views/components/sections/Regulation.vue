@@ -1,47 +1,104 @@
 <template>
   <section id="reglementation">
-    <h2><span class="section-number">9.</span> Cadre réglementaire et conformité</h2>
-    <p>Blackcoin s'inscrit dans une démarche de conformité progressive :</p>
+
+    <h2>
+      <span class="section-number">9.</span>
+      {{ $t('Regulation.title') }}
+    </h2>
+
+    <p>
+      {{ $t('Regulation.description') }}
+    </p>
+
     <div class="compliance-list">
+
       <div class="compliance-item">
-        <div class="check-icon">✓</div>
-        <div>
-          <h4>Éviter toute qualification en produit financier</h4>
-          <p>Approche utilitaire claire</p>
+
+        <div class="check-icon">
+          ✓
         </div>
+
+        <div>
+
+          <h4>
+            {{ $t('Regulation.items.utility.title') }}
+          </h4>
+
+          <p>
+            {{ $t('Regulation.items.utility.text') }}
+          </p>
+
+        </div>
+
       </div>
+
       <div class="compliance-item">
-        <div class="check-icon">✓</div>
-        <div>
-          <h4>Séparation usage / participation / token</h4>
-          <p>Distinction nette entre les composantes</p>
+
+        <div class="check-icon">
+          ✓
         </div>
+
+        <div>
+
+          <h4>
+            {{ $t('Regulation.items.separation.title') }}
+          </h4>
+
+          <p>
+            {{ $t('Regulation.items.separation.text') }}
+          </p>
+
+        </div>
+
       </div>
+
       <div class="compliance-item">
-        <div class="check-icon">✓</div>
-        <div>
-          <h4>Information transparente</h4>
-          <p>Communication claire et régulière</p>
+
+        <div class="check-icon">
+          ✓
         </div>
+
+        <div>
+
+          <h4>
+            {{ $t('Regulation.items.transparency.title') }}
+          </h4>
+
+          <p>
+            {{ $t('Regulation.items.transparency.text') }}
+          </p>
+
+        </div>
+
       </div>
+
     </div>
+
     <div class="legal-note">
+
       <p>
-        <strong>Note légale :</strong> Les utilisateurs sont responsables de vérifier la conformité 
-        de leur utilisation avec les lois en vigueur dans leur juridiction. La plateforme Blackcoin 
-        n'est pas accessible aux résidents de certaines juridictions restrictives.
+
+        <strong>
+          {{ $t('Regulation.legalLabel') }}
+        </strong>
+
+        {{ $t('Regulation.legalNote') }}
+
       </p>
+
     </div>
+
   </section>
 </template>
 
 <script>
 export default {
-  name: 'Regulation'
-}
+  name: "Regulation"
+};
 </script>
 
 <style scoped>
+
 section {
   margin-bottom: 60px;
   scroll-margin-top: 20px;
@@ -82,7 +139,7 @@ h2 {
 }
 
 h4 {
-  color: #fff;
+  color: #ffffff;
   margin-bottom: 8px;
 }
 
@@ -95,8 +152,11 @@ h4 {
 }
 
 @media (max-width: 480px) {
+
   h2 {
     font-size: 1.5rem;
   }
+
 }
+
 </style>

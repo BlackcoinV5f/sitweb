@@ -1,31 +1,53 @@
 <template>
   <section id="cotation">
-    <h2><span class="section-number">8.</span> Cotation et plateformes d'échange</h2>
+
+    <h2>
+      <span class="section-number">8.</span>
+      {{ $t('Cotation.title') }}
+    </h2>
+
     <div class="warning-box">
+
       <p>
-        L'équipe Blackcoin pourra, le moment venu, étudier les possibilités d'intégration 
-        du token LTN sur des plateformes d'échange compatibles. <strong>Toutefois :</strong>
+        {{ $t('Cotation.descriptionStart') }}
+        <strong>
+          {{ $t('Cotation.descriptionStrong') }}
+        </strong>
       </p>
+
       <ul>
-        <li>❌ <strong>Aucune cotation n'est garantie</strong></li>
-        <li>❌ <strong>Aucune liquidité n'est promise</strong></li>
-        <li>❌ <strong>Aucune échéance temporelle n'est contractuelle</strong></li>
+
+        <li>
+          {{ $t('Cotation.items.listing') }}
+        </li>
+
+        <li>
+          {{ $t('Cotation.items.liquidity') }}
+        </li>
+
+        <li>
+          {{ $t('Cotation.items.timeline') }}
+        </li>
+
       </ul>
+
       <p class="mt-2">
-        Les décisions relatives à une éventuelle cotation dépendront de facteurs techniques, 
-        réglementaires et stratégiques.
+        {{ $t('Cotation.footer') }}
       </p>
+
     </div>
+
   </section>
 </template>
 
 <script>
 export default {
-  name: 'Cotation'
-}
+  name: "Cotation"
+};
 </script>
 
 <style scoped>
+
 section {
   margin-bottom: 60px;
   scroll-margin-top: 20px;
@@ -67,8 +89,11 @@ li {
 }
 
 @media (max-width: 480px) {
+
   h2 {
     font-size: 1.5rem;
   }
+
 }
+
 </style>

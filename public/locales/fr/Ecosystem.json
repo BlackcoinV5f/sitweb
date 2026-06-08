@@ -1,1 +1,23 @@
-{}
+{
+  "sectionNumber": "3.",
+  "title": "Présentation de l'écosystème Liton Network",
+  "intro": "L'écosystème Blackcoin repose sur trois piliers complémentaires :",
+  "pillars": [
+    {
+      "icon": "👥",
+      "title": "Participation communautaire",
+      "description": "Activité, engagement, progression"
+    },
+    {
+      "icon": "🛠️",
+      "title": "Services numériques",
+      "description": "Éducation, outils, accès"
+    },
+    {
+      "icon": "🪙",
+      "title": "Token LTN",
+      "description": "Outil fonctionnel interne"
+    }
+  ],
+  "note": "Ces trois composantes sont volontairement distinctes afin d'éviter toute confusion entre participation, utilisation des services et détention de tokens."
+}

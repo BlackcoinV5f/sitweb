@@ -9,7 +9,9 @@ const SUPPORTED_LOCALES = ["fr", "en"];
 const namespaces = [
   "CtaSection",
   "DesktopNav",
+  "Cotation",
   "MobileMenu",
+  "Conclusion",
   "Distribution",
   "Ecosystem",
   "Footer",
