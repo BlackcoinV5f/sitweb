@@ -1,7 +1,7 @@
 <template>
   <nav class="table-of-contents">
     <div class="toc-container">
-      <h3>Sommaire</h3>
+      <h3>{{ $t('Whitepaper.toc.title') }}</h3>
       <ul>
         <li v-for="section in sections" :key="section.id">
           <a :href="'#' + section.id" @click.prevent="scrollToSection(section.id)">
@@ -11,7 +11,7 @@
       </ul>
       <div class="toc-footer">
         <button @click="$emit('download-pdf')" class="download-btn">
-          📄 Télécharger en PDF
+          📄 {{ $t('Whitepaper.toc.download') }}
         </button>
       </div>
     </div>
@@ -19,6 +19,8 @@
 </template>
 
 <script>
+import { useI18n } from 'vue-i18n'
+
 export default {
   name: 'TableOfContents',
   props: {
@@ -27,11 +29,15 @@ export default {
       required: true
     }
   },
+  setup() {
+    const { t } = useI18n()
+    return { t }
+  },
   methods: {
     scrollToSection(id) {
-      const element = document.getElementById(id);
+      const element = document.getElementById(id)
       if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
+        element.scrollIntoView({ behavior: 'smooth' })
       }
     }
   }

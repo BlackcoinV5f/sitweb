@@ -2,36 +2,19 @@
   <footer class="footer">
     <div class="footer-content">
 
-      <!-- BRAND -->
-      <div class="footer-brand">
-        <div class="footer-logo">
-          <img :src="logo" :alt="t('Footer.logoAlt')" class="footer-logo-img" />
-          <span class="footer-logo-text">{{ t("Footer.brand") }}</span>
-        </div>
-        <p class="footer-description">{{ t("Footer.description") }}</p>
-      </div>
-
-      <!-- LIENS FUSIONNÉS (gauche) -->
+      <!-- LIENS -->
       <div class="footer-links">
         <h3 class="footer-title">{{ t("Footer.links.title") }}</h3>
         <ul class="footer-nav">
           <li><router-link to="/about">{{ t("Footer.links.about") }}</router-link></li>
           <li><router-link to="/community">{{ t("Footer.links.community") }}</router-link></li>
           <li><a href="#">{{ t("Footer.links.legal") }}</a></li>
-          <li>
-  <router-link to="/privacy-policy">
-    {{ t("Footer.links.privacy") }}
-  </router-link>
-</li>
-          <li>
-  <router-link to="/terms-of-use">
-    {{ t("Footer.links.terms") }}
-  </router-link>
-</li>
+          <li><router-link to="/privacy-policy">{{ t("Footer.links.privacy") }}</router-link></li>
+          <li><router-link to="/terms-of-use">{{ t("Footer.links.terms") }}</router-link></li>
         </ul>
       </div>
 
-      <!-- SOCIAL (droite) -->
+      <!-- SOCIAL -->
       <div class="footer-social">
         <h3 class="footer-title">{{ t("Footer.social.title") }}</h3>
         <div class="social-links">
@@ -51,7 +34,7 @@
             <i class="fa-brands fa-facebook"></i>
           </a>
 
-          <a href="https://www.youtube.com/@Blackcoinchaine" target="_blank" rel="noopener noreferrer"
+          <a href="https://youtube.com/@liton_network?si=xWWgWzHPPWmQZtML" target="_blank" rel="noopener noreferrer"
             class="social-link" :title="t('Footer.social.youtube')">
             <i class="fa-brands fa-youtube"></i>
           </a>
@@ -86,7 +69,6 @@
 <script setup>
 import { computed } from "vue";
 import { useI18n } from "vue-i18n";
-import logo from "../assets/liton-logo.png";
 
 const { t } = useI18n({ useScope: "global" });
 const currentYear = computed(() => new Date().getFullYear());
@@ -103,30 +85,9 @@ const currentYear = computed(() => new Date().getFullYear());
   margin: auto;
   padding: 3rem 1.5rem;
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr; /* 2 colonnes au lieu de 3 */
   gap: 2.5rem;
   align-items: start;
-}
-
-.footer-logo {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin-bottom: 1rem;
-}
-
-.footer-logo-img { width: 40px; }
-
-.footer-logo-text {
-  font-weight: bold;
-  font-size: 1.3rem;
-  color: white;
-}
-
-.footer-description {
-  font-size: 0.88rem;
-  color: var(--text-secondary, #94a3b8);
-  line-height: 1.6;
 }
 
 .footer-title {
@@ -197,7 +158,6 @@ const currentYear = computed(() => new Date().getFullYear());
     grid-template-columns: 1fr;
     text-align: center;
   }
-  .footer-logo { justify-content: center; }
   .footer-nav  { align-items: center; }
   .social-links { justify-content: center; }
 }

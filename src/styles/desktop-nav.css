@@ -7,78 +7,69 @@
 .nav-link,
 .dropdown-trigger {
   color: white;
-
   text-decoration: none;
-
   background: transparent;
-
   border: none;
-
   padding: 0.8rem 1rem;
-
   border-radius: 10px;
-
   cursor: pointer;
-
   transition: 0.3s;
 }
 
 .nav-link:hover,
 .dropdown-trigger:hover {
-  background: rgba(255,255,255,0.08);
-
+  background: rgba(255, 255, 255, 0.08);
   color: #00c2ff;
 }
 
+/* ── Dropdown ── */
 .dropdown {
   position: relative;
 }
 
-.dropdown-menu {
+/* Pont invisible qui comble le gap entre le bouton et le menu */
+.dropdown::after {
+  content: "";
   position: absolute;
-
   top: 100%;
   left: 0;
+  width: 100%;
+  height: 10px;
+}
 
+.dropdown-menu {
+  position: absolute;
+  top: calc(100% + 10px); /* aligne sous le pont */
+  left: 0;
   min-width: 220px;
-
-  background: rgba(7,17,32,0.98);
-
+  background: rgba(7, 17, 32, 0.98);
   border-radius: 14px;
-
+  padding: 0.4rem 0;
   opacity: 0;
   visibility: hidden;
-
-  transition: 0.3s;
+  transition: opacity 0.3s, visibility 0.3s;
+  pointer-events: none;
 }
 
 .dropdown:hover .dropdown-menu {
   opacity: 1;
   visibility: visible;
+  pointer-events: auto;
 }
 
 .dropdown-item {
   display: block;
-
   padding: 1rem;
-
   color: white;
-
   text-decoration: none;
 }
 
 .dropdown-item:hover {
-  background: rgba(255,255,255,0.08);
-
+  background: rgba(255, 255, 255, 0.08);
   color: #00c2ff;
 }
 
-@media (max-width: 768px) {
-  .desktop-nav {
-    display: none;
-  }
-}
-
+/* ── Language switch ── */
 .language-switch {
   display: flex;
   align-items: center;
@@ -88,7 +79,7 @@
 
 .lang-btn {
   background: transparent;
-  border: 1px solid rgba(255,255,255,0.15);
+  border: 1px solid rgba(255, 255, 255, 0.15);
   color: white;
   padding: 6px 12px;
   border-radius: 999px;
@@ -98,10 +89,17 @@
 }
 
 .lang-btn:hover {
-  background: rgba(255,255,255,0.08);
+  background: rgba(255, 255, 255, 0.08);
 }
 
 .lang-btn.active {
   background: white;
   color: black;
+}
+
+/* ── Mobile ── */
+@media (max-width: 768px) {
+  .desktop-nav {
+    display: none;
+  }
 }
